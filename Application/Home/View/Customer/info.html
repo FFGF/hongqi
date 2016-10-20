@@ -1,0 +1,50 @@
+<extend name="Public/base"/>
+
+<block name="body">
+<div class="platCon">
+	<div class="platState white">
+		<div class="platTitle"><h2>客户详情</h2></div>
+		<a href="{:U('/customer/')}" class="return" title="返回客户列表"></a>
+		<div class="recordCou">
+
+			<table class="customer_order" cellspacing="0" cellpadding="0">
+				<thead>
+					<tr>
+						<th width="70" class="leftradiu">序号</th>
+						<th width="100" class="lan">交易类型</th>
+						<th width="100" class="">金额</th>
+						<th width="300" class="lan">交易信息</th>
+						<th width="200" class="rightradiu">交易时间</th>
+					</tr>
+				</thead>
+				<tbody>
+					<notempty name="_list">
+					<volist name="_list" id="vo" key="k">
+						<tr>
+							<td>{$k}</td>
+							<td>{$vo.payment_trans_type_id|formatPaymentTransType}</td>
+							<td>{$vo.amount|formatAmount}</td>
+							<td>{$vo.transaction_desc}</td>
+							<td>{$vo.transaction_date}</td>							
+						</tr> 
+					</volist>
+					<else/>
+						<td colspan="6" class="text-center"> Oh! 暂时还没有内容! </td>
+					</notempty>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="6"></td>
+					</tr>
+				</tfoot>
+			</table>
+			<div class="page">{$_page}</div>
+		</div>
+	</div>
+</div>
+
+
+	
+
+</block>
+

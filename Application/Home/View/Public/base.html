@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>渠道商管理平台 V{$Think.THINK_VERSION} | 盛大云</title>	
+	<link rel="stylesheet" type="text/css" href="__CSS__/platform.css">
+	<script type="text/javascript" src="http://static.grandcloud.cn/www/media/v3/new/js/jquery-1.8.3.min.js"></script>	
+    <block name="style"></block>
+</head>
+<body>
+<div class="wrap">
+	<div class="platLeft">
+		<div class="platLogo"><a href="http://www.grandcloud.cn/"><img src="__IMG__/platLogo.png"></a></div>
+		<ul class="platNav">
+			<li <if condition="CONTROLLER_NAME=='Index'">class="active arrowDown"</if> >
+				<i class="icon icon1"></i>管理中心<i class="arrow"></i>
+				<ul class="childLi">
+					<li <if condition="CONTROLLER_NAME=='Index' AND ACTION_NAME=='index'">class="now"</if> ><a href="/index.html">帐户状态</a></li>
+				</ul>			
+			</li>
+			<li <if condition="CONTROLLER_NAME=='Customer'">class="active arrowDown"</if> >
+				<i class="icon icon2"></i>客户管理<i class="arrow"></i>
+				<ul class="childLi">
+					<li <if condition="CONTROLLER_NAME=='Customer' AND ACTION_NAME=='add'">class="now"</if> ><a href="/customer-add.html">添加客户</a></li>
+					<li <if condition="CONTROLLER_NAME=='Customer' AND (ACTION_NAME=='index' OR ACTION_NAME=='info' OR ACTION_NAME=='product')">class="now"</if> ><a href="/customer-index.html">全部客户</a></li>
+					<li <if condition="CONTROLLER_NAME=='Customer' AND ACTION_NAME=='order'">class="now"</if> ><a href="/customer-order.html">客户订单</a></li>
+				</ul>
+			</li>
+			<li> <if condition="CONTROLLER_NAME=='Finance'">class="active arrowDown"</if> >
+				<i class="icon icon3"></i>财务管理<i class="arrow"></i>
+				<ul class="childLi">
+					<li> <if condition="CONTROLLER_NAME=='Finance' AND ACTION_NAME=='index'">class="now"</if> ><a href="/finance-index.html">提现记录</a></li>
+					<li <if condition="CONTROLLER_NAME=='Finance' AND ACTION_NAME=='generatepromoindex'">class="now"</if> ><a href="/finance-generatepromoindex.html">生成优惠券</a></li>
+					<li <if condition="CONTROLLER_NAME=='Finance' AND ACTION_NAME=='promomanagement'">class="now"</if> ><a href="/finance-promomanagement.html">优惠券管理</a></li>
+				</ul>
+			</li>
+			<li <if condition="CONTROLLER_NAME=='UserInfo'">class="active arrowDown"</if> >
+				<i class="icon icon4"></i>资料管理<i class="arrow"></i>
+				<ul class="childLi">
+					<li <if condition="CONTROLLER_NAME=='UserInfo' AND ACTION_NAME=='index'">class="now"</if> ><a href="{:U('UserInfo/index')}">我的资料</a></li>
+					<li <if condition="CONTROLLER_NAME=='UserInfo' AND ACTION_NAME=='certificate'">class="now"</if> ><a href="{:U('UserInfo/certificate')}">我的证件</a></li>
+					<li <if condition="CONTROLLER_NAME=='UserInfo' AND ACTION_NAME=='bank'">class="now"</if> ><a href="{:U('UserInfo/bank')}">银行账户</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+    <div class="platRight">
+        <div class="platTop">
+            <div class="Tit">渠道商管理平台</div>
+            <div class="TopR">
+                <a class="emNews" href="{:U('/Message/index')}">
+                    <img src="__IMG__/e-mail.png">
+                    <i id="notread"></i>
+                </a>|
+                <a href="{:U('/index/logout')}">退出</a>
+            </div>
+        </div>
+        <block name="body"></block>
+    </div>
+
+</div>
+<script type="text/javascript" src="__JS__/platform.js"></script>
+<script type="text/javascript">
+    $('.sort > a').click(function(){
+        var link  = window.location.href.toString();
+        var type  = $(this).parent().attr('type');
+        var order = $(this).attr('class').split(' ')[0];
+        link = link.replace(/([?&-]type[=-])([^&-]*)/gi,"$1"+type);
+        link = link.replace(/([?&-]order[=-])([^&-]*)/gi,"$1"+order);
+        if(link.match(/[?&-]order[=-]/)==null){
+            link += (link.indexOf('?') == -1 ? '?' : '&') + "type="+type+"&order="+order;
+        }
+        window.location.href = link;
+    });
+    $(function(){
+        var data={}
+        var url="message-notread.html"
+        $.getJSON(url,data,function(response){
+            $('#notread').html(response['number'])
+        })
+    })
+</script>
+<block name="script"></block>
+</body>
+</html>

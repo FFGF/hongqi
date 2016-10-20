@@ -1,0 +1,45 @@
+<extend name="Public/base"/>
+<block name="style">
+    <link rel="stylesheet" href="__CSS__/BeatPicker.min.css"/>
+    <link rel="stylesheet" href="__CSS__/default.css" />
+</block>
+<block name="body">
+    <div class="platCon">
+        <div class="platState white">
+            <div class="platTitle"><h2>站内信</h2></div>
+            <div class="recordCou">
+                <div class="newEL">
+                    <form>
+                        <div class="eCon">{$msg['title']}</div>
+                        <div class="eCon"></div>
+                        <script charset="utf-8" src="__JS__/zh_CN.js"></script>
+                        <DIV  style="width:800px;height:500px;overflow:auto;border:1px solid #CCC">
+                            {$msg["message"] | htmlspecialchars_decode}
+                        </DIV>
+                    </form>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script src="__JS__/BeatPicker.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+          var msg_id="{$msg['msg_id']}"
+          var data={'msg_id':msg_id}
+          var url="message-readmark.html"
+          $.getJSON(url,data,function(response){
+                // $('#notread').html(response['number'])
+          })
+
+          $('.ke-insertfile').each(function(index){
+              if($(this).html()){
+                  $(this).html('附件'+(index+1));
+              }
+          })
+      })
+    </script>
+
+</block>

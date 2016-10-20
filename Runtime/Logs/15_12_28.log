@@ -1,0 +1,2074 @@
+[ 2015-12-28T14:52:22+08:00 ] 127.0.0.1 /admin/finance-add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\43d38f98c3474136ea5a1a7d54d3c1e2.php 第 60 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\43d38f98c3474136ea5a1a7d54d3c1e2.php 第 60 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\43d38f98c3474136ea5a1a7d54d3c1e2.php 第 60 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-12-28T14:52:24+08:00 ] 127.0.0.1 /admin/Examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 41 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.070004s ]
+SQL: SELECT * FROM `channels_user` LIMIT 0,500   [ RunTime:0.126008s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.166009s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.200012s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.331019s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.087005s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.195011s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.051003s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.044003s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.017001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.035002s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_user`  [ RunTime:0.010000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.013001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.020001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.026002s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.056003s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.018001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.009001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.023002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-28T14:52:25+08:00 ] 127.0.0.1 /admin/examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 41 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.012001s ]
+SQL: SELECT * FROM `channels_user` LIMIT 0,500   [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.061004s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.041002s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.008001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.028001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.012001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.025002s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.035002s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.033002s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.021001s ]
+SQL: SELECT * FROM `channels_user`  [ RunTime:0.033002s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.436025s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.025001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.020001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.045002s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.093006s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.053003s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T14:52:26+08:00 ] 127.0.0.1 /Admin/examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 41 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.020001s ]
+SQL: SELECT * FROM `channels_user` LIMIT 0,500   [ RunTime:0.179010s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.008000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.009000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.007000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.019001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.019001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.020001s ]
+SQL: SELECT * FROM `channels_user`  [ RunTime:0.019002s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.018001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.010001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.036002s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.013001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T14:52:26+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.020001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T14:52:26+08:00 ] 127.0.0.1 /admin/examine-check-user_id-999990000000106.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.022002s ]
+SQL: SELECT * FROM `channels_user` WHERE ( `user_id` = '999990000000106' ) LIMIT 1   [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant I - assumed 'I' D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\7c9273ca214df8763531962986284e86.php 第 58 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T14:52:27+08:00 ] 127.0.0.1 /Admin/examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 41 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `channels_user` LIMIT 0,500   [ RunTime:0.020001s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.029001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.016001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.008000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.008001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.035002s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.019001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.014001s ]
+SQL: SELECT * FROM `channels_user`  [ RunTime:0.007000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.024002s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.025001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.013001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.017001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.007001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T14:52:49+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-12-28T14:53:13+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.012001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T14:58:35+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:01:20+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:01:34+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.019001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:02:40+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.003001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:09:32+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-28T15:09:54+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:09:57+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.004001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:09:58+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-28T15:10:06+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:24:27+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:24:28+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:27:04+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:27:25+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:27:51+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:28:45+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:28:48+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-12-28T15:28:58+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.010000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:29:09+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:29:28+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-12-28T15:31:07+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.010000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:31:17+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-12-28T15:31:32+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:31:42+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.004001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-12-28T15:34:08+08:00 ] 127.0.0.1 /admin/finance-withdrawals.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_withdrawals` [ RunTime:0.009001s ]
+SQL: SELECT channels_withdrawals.id,channels_withdrawals.create_time,channels_withdrawals.user_id,channels_withdrawals.type,channels_withdrawals.amount,channels_withdrawals.update_time,channels_withdrawals.status,channels_withdrawals.flag,channels_withdrawals.admin_id,channels_bank.bank_name,channels_bank.bank_user,channels_bank.bank_no FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 0,500   [ RunTime:0.007000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 1   [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:34:43+08:00 ] 127.0.0.1 /admin/Examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 41 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.025001s ]
+SQL: SELECT * FROM `channels_user` LIMIT 0,500   [ RunTime:0.015001s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.008000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002001s ]
+SQL: SELECT * FROM `channels_user`  [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.010000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.009001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:34:46+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:35:20+08:00 ] 127.0.0.1 /admin/finance-add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\43d38f98c3474136ea5a1a7d54d3c1e2.php 第 60 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\43d38f98c3474136ea5a1a7d54d3c1e2.php 第 60 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\43d38f98c3474136ea5a1a7d54d3c1e2.php 第 60 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:35:22+08:00 ] 127.0.0.1 /admin/finance-withdrawals.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_withdrawals` [ RunTime:0.005000s ]
+SQL: SELECT channels_withdrawals.id,channels_withdrawals.create_time,channels_withdrawals.user_id,channels_withdrawals.type,channels_withdrawals.amount,channels_withdrawals.update_time,channels_withdrawals.status,channels_withdrawals.flag,channels_withdrawals.admin_id,channels_bank.bank_name,channels_bank.bank_user,channels_bank.bank_no FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 0,500   [ RunTime:0.006001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 1   [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:35:47+08:00 ] 127.0.0.1 /admin/Examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 41 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `channels_user` LIMIT 0,500   [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.009001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.007001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT * FROM `channels_user`  [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-28T15:35:49+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:37:59+08:00 ] 127.0.0.1 /admin/finance-withdrawals.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_withdrawals` [ RunTime:0.003000s ]
+SQL: SELECT channels_withdrawals.id,channels_withdrawals.create_time,channels_withdrawals.user_id,channels_withdrawals.type,channels_withdrawals.amount,channels_withdrawals.update_time,channels_withdrawals.status,channels_withdrawals.flag,channels_withdrawals.admin_id,channels_bank.bank_name,channels_bank.bank_user,channels_bank.bank_no FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 0,500   [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-28T15:47:39+08:00 ] 127.0.0.1 /Admin/examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:47:42+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:47:46+08:00 ] 127.0.0.1 /admin/index-login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_admin` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_admin` WHERE ( `admin_id` = 'root' ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:47:47+08:00 ] 127.0.0.1 /Admin/examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 41 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_user` LIMIT 0,500   [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_user`  [ RunTime:0.007000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.005001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:48:52+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.008001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T15:49:45+08:00 ] 127.0.0.1 /admin/finance-withdrawals.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_withdrawals` [ RunTime:0.002000s ]
+SQL: SELECT channels_withdrawals.id,channels_withdrawals.create_time,channels_withdrawals.user_id,channels_withdrawals.type,channels_withdrawals.amount,channels_withdrawals.update_time,channels_withdrawals.status,channels_withdrawals.flag,channels_withdrawals.admin_id,channels_bank.bank_name,channels_bank.bank_user,channels_bank.bank_no FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 0,500   [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 1   [ RunTime:0.005001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-12-28T15:53:57+08:00 ] 127.0.0.1 /admin/finance-examine.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_withdrawals` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_withdrawals` WHERE ( `id` = 14 ) LIMIT 1   [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `channels_info` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_info` WHERE ( `user_id` = '999990000000137' ) LIMIT 1   [ RunTime:0.003000s ]
+SQL: UPDATE `channels_withdrawals` SET `status`=1,`flag`='',`admin_id`='root',`update_time`='2015-12-28 15:53:57' WHERE ( `id` = 14 ) [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-12-28T15:53:58+08:00 ] 127.0.0.1 /admin/finance-withdrawals.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_withdrawals` [ RunTime:0.002000s ]
+SQL: SELECT channels_withdrawals.id,channels_withdrawals.create_time,channels_withdrawals.user_id,channels_withdrawals.type,channels_withdrawals.amount,channels_withdrawals.update_time,channels_withdrawals.status,channels_withdrawals.flag,channels_withdrawals.admin_id,channels_bank.bank_name,channels_bank.bank_user,channels_bank.bank_no FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 0,500   [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T17:45:57+08:00 ] 127.0.0.1 /Admin/examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-12-28T17:46:00+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T17:46:03+08:00 ] 127.0.0.1 /admin/index-login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_admin` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_admin` WHERE ( `admin_id` = 'root' ) LIMIT 1   [ RunTime:0.007001s ]
+
+[ 2015-12-28T17:46:04+08:00 ] 127.0.0.1 /Admin/examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 41 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `channels_user` LIMIT 0,500   [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.009000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.007001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.010001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_user`  [ RunTime:0.010001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.010001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.008001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T17:46:06+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:04:58+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:07:33+08:00 ] 127.0.0.1 /admin/Customer
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\CustomerController.class.php 第 151 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_1d78dc8ed51214e518b5114fe24490ae.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `cloud_member` [ RunTime:0.008000s ]
+NOTIC: [8] Undefined variable: cache_name D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Model\CustomerModel.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `channels_customer` [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Model\CustomerModel.class.php 第 61 行.
+SQL: SELECT cloud_member.user_id,cloud_member.user_name,cloud_member.user_company,cloud_member.user_phone,cloud_member.user_email,channels_customer.user_id as channels_user_id FROM `channels_customer` INNER JOIN cloud_member ON channels_customer.customer_user_id = cloud_member.user_id  ORDER BY channels_customer.customer_user_id DESC  [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.007000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000165' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.024001s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000103' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000165' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000103' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000106' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000103' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002001s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='1310143817' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000106' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.028001s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000106' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000165' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000165' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002001s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000103' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT payment_trans.user_id,payment_trans.payment_trans_type_id,COALESCE(SUM(payment_trans.amount),0) as total FROM `channels_customer` INNER JOIN payment_trans ON channels_customer.customer_user_id = payment_trans.user_id  WHERE ( payment_trans.payment_trans_type_id IN ('CHARGE','CONSUME','RETURN') ) GROUP BY channels_customer.customer_user_id,payment_trans.payment_trans_type_id ORDER BY channels_customer.create_time DESC  [ RunTime:0.037002s ]
+NOTIC: [8] Undefined index: 459279055RETURN D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Model\CustomerModel.class.php 第 21 行.
+NOTIC: [2] Division by zero D:\xampp\htdocs\channels.grandcloud.cn\Application\Common\Common\function.php 第 169 行.
+NOTIC: [8] Undefined variable: cache_name D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Model\CustomerModel.class.php 第 47 行.
+NOTIC: [8] Undefined variable: where D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Model\CustomerModel.class.php 第 61 行.
+SQL: SELECT cloud_member.user_id,cloud_member.user_name,cloud_member.user_company,cloud_member.user_phone,cloud_member.user_email,channels_customer.user_id as channels_user_id FROM `channels_customer` INNER JOIN cloud_member ON channels_customer.customer_user_id = cloud_member.user_id  ORDER BY channels_customer.customer_user_id DESC  [ RunTime:0.027001s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006001s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000165' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000103' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000165' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000103' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000106' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000103' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='1310143817' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000106' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000106' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000165' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000165' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000099' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `to_level` FROM `channels_level` WHERE ( user_id='999990000000103' and effective_time <='2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: 459279055RETURN D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Model\CustomerModel.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:07:41+08:00 ] 127.0.0.1 /admin/finance-withdrawals.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_withdrawals` [ RunTime:0.003000s ]
+SQL: SELECT channels_withdrawals.id,channels_withdrawals.create_time,channels_withdrawals.user_id,channels_withdrawals.type,channels_withdrawals.amount,channels_withdrawals.update_time,channels_withdrawals.status,channels_withdrawals.flag,channels_withdrawals.admin_id,channels_bank.bank_name,channels_bank.bank_user,channels_bank.bank_no FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 0,500   [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:08:47+08:00 ] 127.0.0.1 /admin/finance-withdrawals.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_withdrawals` [ RunTime:0.003001s ]
+SQL: SELECT channels_withdrawals.id,channels_withdrawals.create_time,channels_withdrawals.user_id,channels_withdrawals.type,channels_withdrawals.amount,channels_withdrawals.update_time,channels_withdrawals.status,channels_withdrawals.flag,channels_withdrawals.admin_id,channels_bank.bank_name,channels_bank.bank_user,channels_bank.bank_no FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 0,500   [ RunTime:0.008000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 1   [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-12-28T18:08:48+08:00 ] 127.0.0.1 /admin/Examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 41 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_user` LIMIT 0,500   [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT * FROM `channels_user`  [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:08:51+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.009001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:10:29+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: admin D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\fecd79d653a1fa97dae956145e5c0d2b.php 第 104 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:10:44+08:00 ] 127.0.0.1 /admin/finance-withdrawals.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_withdrawals` [ RunTime:0.003000s ]
+SQL: SELECT channels_withdrawals.id,channels_withdrawals.create_time,channels_withdrawals.user_id,channels_withdrawals.type,channels_withdrawals.amount,channels_withdrawals.update_time,channels_withdrawals.status,channels_withdrawals.flag,channels_withdrawals.admin_id,channels_bank.bank_name,channels_bank.bank_user,channels_bank.bank_no FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 0,500   [ RunTime:0.012001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:11:00+08:00 ] 127.0.0.1 /admin/Examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 41 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_user` LIMIT 0,500   [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_user`  [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:11:02+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.007000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: admin D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\fecd79d653a1fa97dae956145e5c0d2b.php 第 104 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-12-28T18:12:00+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: admin D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\fecd79d653a1fa97dae956145e5c0d2b.php 第 104 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:13:25+08:00 ] 127.0.0.1 /admin/finance-add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\43d38f98c3474136ea5a1a7d54d3c1e2.php 第 60 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\43d38f98c3474136ea5a1a7d54d3c1e2.php 第 60 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\43d38f98c3474136ea5a1a7d54d3c1e2.php 第 60 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:13:26+08:00 ] 127.0.0.1 /admin/finance-withdrawals.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_withdrawals` [ RunTime:0.002000s ]
+SQL: SELECT channels_withdrawals.id,channels_withdrawals.create_time,channels_withdrawals.user_id,channels_withdrawals.type,channels_withdrawals.amount,channels_withdrawals.update_time,channels_withdrawals.status,channels_withdrawals.flag,channels_withdrawals.admin_id,channels_bank.bank_name,channels_bank.bank_user,channels_bank.bank_no FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 0,500   [ RunTime:0.005000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 1   [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:17:26+08:00 ] 127.0.0.1 /admin/Examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 41 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_user` LIMIT 0,500   [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_user`  [ RunTime:0.003001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:17:29+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-28T18:18:38+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:21:08+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:22:06+08:00 ] 127.0.0.1 /admin/finance-withdrawals.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_withdrawals` [ RunTime:0.002000s ]
+SQL: SELECT channels_withdrawals.id,channels_withdrawals.create_time,channels_withdrawals.user_id,channels_withdrawals.type,channels_withdrawals.amount,channels_withdrawals.update_time,channels_withdrawals.status,channels_withdrawals.flag,channels_withdrawals.admin_id,channels_bank.bank_name,channels_bank.bank_user,channels_bank.bank_no FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 0,500   [ RunTime:0.003000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 1   [ RunTime:0.004001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:22:29+08:00 ] 127.0.0.1 /admin/finance-examine.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_withdrawals` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_withdrawals` WHERE ( `id` = 35 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `channels_info` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_info` WHERE ( `user_id` = '999990000000099' ) LIMIT 1   [ RunTime:0.006001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-12-28T18:23:20+08:00 ] 127.0.0.1 /admin/finance-withdrawals.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_withdrawals` [ RunTime:0.004000s ]
+SQL: SELECT channels_withdrawals.id,channels_withdrawals.create_time,channels_withdrawals.user_id,channels_withdrawals.type,channels_withdrawals.amount,channels_withdrawals.update_time,channels_withdrawals.status,channels_withdrawals.flag,channels_withdrawals.admin_id,channels_bank.bank_name,channels_bank.bank_user,channels_bank.bank_no FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 0,500   [ RunTime:0.010001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 1   [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:24:58+08:00 ] 127.0.0.1 /admin/Examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 41 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_user` LIMIT 0,500   [ RunTime:0.011001s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_user`  [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:24:59+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.005000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:27:28+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-12-28T18:28:02+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:28:21+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.006000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:29:16+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-12-28T18:34:08+08:00 ] 127.0.0.1 /admin/Examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 41 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `channels_user` LIMIT 0,500   [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.006000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT * FROM `channels_user`  [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:36:54+08:00 ] 127.0.0.1 /admin/Examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:37:40+08:00 ] 127.0.0.1 /admin/finance-add.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\43d38f98c3474136ea5a1a7d54d3c1e2.php 第 60 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\43d38f98c3474136ea5a1a7d54d3c1e2.php 第 60 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\43d38f98c3474136ea5a1a7d54d3c1e2.php 第 60 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-12-28T18:37:42+08:00 ] 127.0.0.1 /admin/finance-withdrawals.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_withdrawals` [ RunTime:0.002001s ]
+SQL: SELECT channels_withdrawals.id,channels_withdrawals.create_time,channels_withdrawals.user_id,channels_withdrawals.type,channels_withdrawals.amount,channels_withdrawals.update_time,channels_withdrawals.status,channels_withdrawals.flag,channels_withdrawals.admin_id,channels_bank.bank_name,channels_bank.bank_user,channels_bank.bank_no FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 0,500   [ RunTime:0.010000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `channels_withdrawals` INNER JOIN channels_bank ON channels_bank.user_id=channels_withdrawals.user_id  WHERE ( channels_withdrawals.status IN (0,1,2) ) LIMIT 1   [ RunTime:0.004000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: s_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+NOTIC: [8] Undefined index: e_time D:\xampp\htdocs\channels.grandcloud.cn\Runtime\Cache\Admin\88655bb24893eb1be07155b496b720d7.php 第 153 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:37:46+08:00 ] 127.0.0.1 /admin/Examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 35 行.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php 第 41 行.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_user` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_user` LIMIT 0,500   [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.007000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_user`  [ RunTime:0.003000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1663726908' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.003001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000095' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000165' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000023618' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000137' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000099' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.005000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '1310143817' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000103' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.004001s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' ) AND ( `effective_time` <= '2015-12-28' ) ORDER BY effective_time desc LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-28T18:37:48+08:00 ] 127.0.0.1 /admin/examine-writelevel-user_id-999990000000106-user_level-11.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `channels_level` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `channels_level` WHERE ( `user_id` = '999990000000106' )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

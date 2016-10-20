@@ -1,0 +1,18 @@
+[ 2016-09-14T18:37:27+08:00 ] ::1 /admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.029002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.051003s ]
+
+[ 2016-09-14T18:37:30+08:00 ] ::1 /Admin/examine
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: root D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ChannelsController.class.php ç¬¬ 13 è¡Œ.
+NOTIC: [8] Undefined variable: examineStatus D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php ç¬¬ 35 è¡Œ.
+NOTIC: [8] Undefined variable: map D:\xampp\htdocs\channels.grandcloud.cn\Application\Admin\Controller\ExamineController.class.php ç¬¬ 41 è¡Œ.
+NOTIC: [2] unlink(./Runtime/Temp/sndaCloud_V1_file_bbd8afe12b50ee3e84111e95fe553b07.php): No such file or directory D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Cache\Driver\File.class.php ç¬¬ 157 è¡Œ.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+NOTIC: [2] mysql_connect():  D:\xampp\htdocs\channels.grandcloud.cn\Application\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ç¬¬ 52 è¡Œ.
+ERR: ÓÉÓÚÁ¬½Ó·½ÔÚÒ»¶ÎÊ±¼äºóÃ»ÓÐÕýÈ·´ð¸´»òÁ¬½ÓµÄÖ÷»úÃ»ÓÐ·´Ó¦£¬Á¬½Ó³¢ÊÔÊ§°Ü¡£
+
+

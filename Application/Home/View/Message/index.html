@@ -1,0 +1,98 @@
+<extend name="Public/base"/>
+<block name="style">
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <link rel="stylesheet" href="__CSS__/BeatPicker.min.css"/>
+</block>
+<block name="body">
+    <div class="platCon">
+        <div class="platState white">
+            <div class="platTitle"><h2>我的站内信</h2></div>
+            <i class="refresh"></i>
+            <div class="recordCou">
+                <div class="emSear">
+                    <input type="button" class="signRead" value="标记已读">
+                    <form action="{:U('/Message/index')}" method="get">
+                    <input type="input" class="searchEmail" placeholder="搜索：主题" name="searchMsg">
+                    <input type="submit" class="searchBtn" value="">
+                    </form>
+                </div>
+                <script type="text/javascript">
+                    $(function(){
+                        $("#emailall").click(function(){
+                            if(this.checked){
+                                $(".email input[name='mailid']").each(function(){this.checked=true;});
+                            }else{
+                                $(".email input[name='mailid']").each(function(){this.checked=false;});
+                            }
+                        });
+                        $(".signRead").click(function(){
+                            var msg_id=''
+                            $(".email input[name='mailid']:checked").parents("tr").removeClass("unread").addClass("read");
+                            $(".email input[name='mailid']:checked").parents("tr").children(".fgf").each(function(){
+                                if(msg_id==''){
+                                    msg_id=this.value
+                                }else{
+                                    msg_id=msg_id+','+this.value
+                                }
+                            })
+                            var data={'msg_id':msg_id}
+                            var url="message-readSign.html"
+                            $.getJSON(url,data,function(response){
+                                 $('#notread').html(response['number'])
+                            })
+                        })
+                    })
+                </script>
+                <table class="Customer_all" cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <th width="10%" class="leftradiu"><input type="checkbox" id="emailall" title="选中/取消选中"></th>
+                        <th width="70%" class="lan">主题</th>
+                        <th width="20%">时间<div class="sort" type="create_time">
+                            <a class="asc <if condition="($Think.request.order eq 'asc')  AND ($Think.request.type eq 'create_time') ">now</if>" title="从小到大"></a>
+                            <a class="desc <if condition="($Think.request.order eq 'desc') AND ($Think.request.type eq 'create_time') ">now</if> " title="从大到小"></a></div></th>
+                    </tr>
+                    </thead>
+                    <tbody class="email">
+                    <notempty name="msg">
+                        <volist name="msg" id="vo">
+                            <if condition="$vo['status'] eq 0">
+                                <tr class="unread">
+                                    <td><input type="checkbox" name="mailid" value="111"></td>
+                                    <td><a href="{:U('/Message/showMsg?msg_id='.$vo['msg_id'])}">{$vo['title']}</a></td>
+                                    <td>{$vo['create_time']}</td>
+                                    <input name="msg_id" type="hidden" value="{$vo['msg_id']}" class="fgf"/>
+                                </tr>
+                                <else/>
+                                <tr class="read">
+                                    <td><input type="checkbox" name="mailid" value="111"></td>
+                                    <td><a href="{:U('/Message/showMsg?msg_id='.$vo['msg_id'])}">{$vo['title']}</a></td>
+                                    <td>{$vo['create_time']}</td>
+                                </tr>
+                            </if>
+                        </volist>
+                        <else/>
+                        <td colspan="4" class="text-center"> Oh! 暂时还没有内容! </td>
+                    </notempty>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="11"></td>
+                    </tr>
+                    </tfoot>
+                </table>
+                <div class="page" align="center">{$_page}</div>
+            </div>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script src="__JS__/jquery-1.11.0.min.js"></script>
+    <script src="__JS__/BeatPicker.min.js"></script>
+    <script type="text/javascript" src="__JS__/platform.js"></script>
+</block>

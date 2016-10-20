@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>渠道商管理平台 V{$Think.THINK_VERSION} | 盛大云</title>
+	<link rel="stylesheet" type="text/css" href="__CSS__/css.css">
+</head>
+<body>
+<div class="wrap apply notice">
+    <h1>渠道商在线审核</h1>
+    <if condition="($id eq 'I')">
+        <div class="dui con">
+            <i></i>
+            <p>
+                <b>您的审核已经提交，目前正在审核，请耐心等待。</b>
+                <br>如有疑问，请邮件联系：<a href="">support@grandcloud.cn</a>
+            </p>
+        </div>
+        <elseif condition="($id eq 'F')"/>
+        <div class="cuo con">
+            <i></i>
+            <p>
+                <b>您的审核没有通过，请重新提交相关资料。</b>
+                <a href="{:U('Register/againIndex')}" class="reapply">重新申请</a>
+                <br>如有疑问，请邮件联系：<a href="">support@grandcloud.cn</a>
+            </p>
+        </div>
+        <else />
+        <div class="ing con">
+            <i></i>
+            <p>
+                <b>您的审核已经通过，请登录<a href="http://channels.grandcloud.cn/">渠道管理平台</a>进行操作和管理。</b>
+                如有疑问，请邮件联系：<a href="">support@grandcloud.cn</a>
+            </p>
+        </div>
+    </if>
+
+
+</div>
+
+</body>
+</html>

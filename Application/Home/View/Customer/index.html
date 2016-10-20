@@ -1,0 +1,111 @@
+<extend name="Public/base"/>
+
+<block name="style"><link rel="stylesheet" href="__CSS__/BeatPicker.min.css"/></block>
+
+<block name="body">
+<div class="platCon">
+	<div class="platState white">
+		<div class="platTitle"><h2>全部客户</h2></div>
+		<i class="refresh" onclick="javascript:location.reload(true);" title="刷新当前页面"></i>
+		<div class="recordCou">			
+			<div class="reSearch">
+				<div class="reSearchM">
+				<form action="{:U('/customer/')}" method="get">
+					<div class="couponState">
+						<input readonly class="coupState" name="status" type="text" class="center" placeholder="交易类型">
+						<i></i>
+						<div class="couSta" >
+							<b>交易类型</b>
+							<b>未充值</b>
+							<b>未消费</b>
+						</div>
+					</div>
+					<input type="hide" name="s_time" style="width:0px;" /><input type="hide" name="e_time" style="width:0px;" />
+					<div class="changeDate">
+						<input type="text" id="s_time" data-beatpicker="true" data-beatpicker-module="clear" placeholder="开始时间" />
+						<input type="text" id="e_time" data-beatpicker="true" data-beatpicker-module="clear" placeholder="结束时间" />
+					</div>							
+					<input type="submit" class="searchTo" value="搜索" onclick="javascript:format_changeDate('s_time','e_time');">
+				</form>
+				</div>
+				
+				<div class="RCsearch">
+				<form action="{:U('/customer/')}" method="get">
+					<input class="sear" type="text" name="k_str" placeholder="搜索：公司名称、手机、联系人">
+						<input type="submit" class="searchTo" value="搜索" onclick="javascript:format_changeDate('s_time','e_time');">
+				</form>
+				</div>
+				<div class="change"><a href="javascript:;" class="RCsearchSimple">简易</a>>	</div>
+			</div>
+			
+			
+			<table class="Customer_all" cellspacing="0" cellpadding="0">
+				<thead>
+					<tr>			
+						<th width="60" class="leftradiu">序号</th>
+                        <th width="120" class="lan">ID</th>
+						<th width="160">公司名称</th>
+						<th width="90" class="lan">联系人</th>
+						<th width="110">手机</th>
+						<th width="140" class="lan">注册时间
+                            <div class="sort" type="create_time">
+                                <a class="asc  <if condition="($Think.request.order eq 'asc') AND ($Think.request.type eq 'create_time') "> now</if>" title="从小到大"></a>
+                                <a class="desc <if condition="($Think.request.order eq 'desc') AND ($Think.request.type eq 'create_time') ">now</if> " title="从大到小"></a>
+                            </div>
+                        </th>
+						<th width="70">充值
+                            <div class="sort" type="charge">
+                                <a class="asc  <if condition="($Think.request.order eq 'asc') AND ($Think.request.type eq 'charge') "> now</if>" title="从小到大"></a>
+                                <a class="desc <if condition="($Think.request.order eq 'desc') AND ($Think.request.type eq 'charge') ">now</if> " title="从大到小"></a>
+                            </div>
+                        </th>
+						<th width="70" class="lan">消费
+                            <div class="sort" type="consume">
+                                <a class="asc  <if condition="($Think.request.order eq 'asc') AND ($Think.request.type eq 'consume') "> now</if>" title="从小到大"></a>
+                                <a class="desc <if condition="($Think.request.order eq 'desc') AND ($Think.request.type eq 'consume') ">now</if> " title="从大到小"></a>
+                            </div>
+                        </th>
+						<th width="60" class="rightradiu">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<notempty name="_list">
+					<volist name="_list" id="vo" key="k">
+					<tr>
+						<td>{$k}</td>
+                        <td>{$vo.user_id}</td>
+						<td>{$vo.user_company|default='未填写公司名称'}</td>
+						<td>{$vo.user_name}</td>
+						<td>{$vo.user_phone}</td>						
+						<td>{$vo.create_time}</td>
+						<td>{$vo.charge|formatAmount}</td>
+						<td>{$vo.consume|formatAmount}</td>
+						<td>
+                            <a href="{:U('/customer/info?id='.$vo['user_id'])}">交易详情</a>
+                            <p></p>
+                            <a href="{:U('/customer/product?id='.$vo['user_id'])}">产品明细</a>
+                        </td>
+					</tr>
+					</volist>
+					<else/>
+						<tr><td colspan="10" class="text-center"> Oh! 暂时还没有内容! </td></tr>
+					</notempty>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="10"></td>
+					</tr>
+				</tfoot>
+			</table>
+			<div class="page">{$_page}</div>
+		</div>
+	</div>
+</div>
+
+
+</block>
+
+<block name="script">
+<script src="__JS__/BeatPicker.min.js"></script> <script src="__JS__/changeDate.js"></script>
+<script><if condition="($Think.request.status neq '') OR ($Think.request.s_time neq '') OR ($Think.request.e_time neq '') ">toggel("reSearchM");<else />toggel("RCsearch");</if></script>
+</block>

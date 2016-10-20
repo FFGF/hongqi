@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>经销商注册</title>
+    <link rel="stylesheet" type="text/css" href="__CSS__/css.css">
+    <!--<script type="text/javascript" src="__JS__/jquery-1.11.0.min.js"></script>-->
+    <link rel="shortcut icon" href="http://static.grandcloud.cn/www/media/v3/new/images/favicon.ico" type="image/x-icon" />
+    <link href="http://static.grandcloud.cn/www/media/v3/new/css/common.css?2015112316"  type="text/css" rel="stylesheet" />
+    <link href="http://static.grandcloud.cn/www/media/v3/new/css/index.css?2015112316"  type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="http://static.grandcloud.cn/www/media/v3/new/js/jquery-1.8.3.min.js?2015112316"></script>
+    <script type="text/javascript" src="http://static.grandcloud.cn/www/media/v3/new/js/common.js?2015112316"></script>
+    <script type="text/javascript" src="http://static.grandcloud.cn/www/media/v3/new/js/jquery.SuperSlide.2.1.1.js?2015112316"></script>
+    <script type="text/javascript" src="http://static.grandcloud.cn/www/media/v3/new/js/index.js?2015112316"></script>
+    <script type="text/javascript" src="__JS__/register.js"></script>
+    <style>
+        #user{
+            display: none;
+        }
+        .gsgm{
+            display: none;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function(){
+            //第一次注册从cloud_member读取信息
+            //用户公司名字
+            if("{$user['user_company']}"){
+                $("#company_name").val("{$user['user_company']}");
+                $("#company_name").parent().attr('class','right');
+            }
+            //用户公司网址
+            if("{$user['user_website']}"){
+                $("#company_website").val("{$user['user_website']}");
+                $("#company_website").parent().attr('class','right');
+            }
+            //用户公司邮箱
+            if("{$user['user_email']}"){
+                $("#company_email").val("{$user['user_email']}");
+                $("#company_email").parent().attr('class','right');
+            }
+           /* //用户公司地址
+            if("{$user['addr']}"){
+                $("#company_address").val("{$user['addr']}");
+                $("#company_address").attr('size', $("#company_address").val().length*2);
+                $("#company_address").parent().attr('class','right');
+            }*/
+            //用户姓名
+            if("{$user['user_name']}"){
+                $("#user_name").val("{$user['user_name']}");
+                $("#user_name").parent().attr('class','right');
+            }
+            //用户电话
+            if("{$user['user_phone']}"){
+                $("#user_phone").val("{$user['user_phone']}");
+                $("#user_phone").parent().attr('class','right');
+            }
+            //用户邮箱
+            if("{$user['user_email']}"){
+                $("#user_email").val("{$user['user_email']}");
+                $("#user_email").parent().attr('class','right');
+            }
+            //第二次注册从channels_user读取信息
+            //公司名称
+            if("{$user['company_name']}"){
+                $("#company_name").val("{$user['company_name']}");
+                $("#company_name").parent().attr('class','right');
+            }
+            //公司网址
+            if("{$user['company_website']}"){
+                $("#company_website").val("{$user['company_website']}");
+                $("#company_website").parent().attr('class','right');
+            }
+            //注册资本
+            if("{$user['company_rc']}"){
+                $("#company_rc").val("{$user['company_rc']}");
+                $("#company_rc").parent().attr('class','right');
+            }
+            //公司规模
+            if("{$user['company_size']}"){
+                $("#company_size").val("{$user['company_size']}");
+                $("#company_size").parent().attr('class','right');
+            }
+            //年销售额
+            if("{$user['company_sv']}"){
+                $("#company_sv").val("{$user['company_sv']}");
+                $("#company_sv").parent().attr('class','right');
+            }
+            //固定电话
+            if("{$user['company_tel']}"){
+                $("#company_tel").val("{$user['company_tel']}");
+                $("#company_tel").parent().attr('class','right');
+            }
+            //邮箱
+            if("{$user['company_email']}"){
+                $("#company_email").val("{$user['company_email']}");
+                $("#company_email").parent().attr('class','right');
+            }
+            //公司地址
+            var company_addressP="{$company_address['province']}";//公司省
+            var company_addressC="{$company_address['city']}";//公司市
+            var company_addressA="{$company_address['area']}";//公司区
+            var company_addressO="{$company_address['others']}";
+            //region_init("select_province","select_city","select_area",company_addressP,company_addressC,company_addressA);
+           if(company_addressP){
+                if(company_addressC){
+                    if(company_addressA){
+                        region_init("select_province","select_city","select_area",company_addressP,company_addressC,company_addressA);
+                    }
+                    else
+                        region_init("select_province","select_city","select_area",company_addressP,company_addressC);
+                }
+                else
+                    region_init("select_province","select_city","select_area",company_addressP);
+            }
+            else
+                region_init("select_province","select_city","select_area");
+            if(company_addressO){
+                $("#company_address").val(company_addressO);
+                $("#company_address").parent().attr('class','right');
+            }
+            //主营业务
+            var business="{$user['company_business']}".split(",");
+            if(jQuery.inArray('IDC托管',business)!=-1){
+                $("#1").attr('checked','checked')
+            }
+            if(jQuery.inArray('网站建设',business)!=-1){
+                $("#2").attr('checked','checked')
+            }
+            if(jQuery.inArray('APP外包',business)!=-1){
+                $("#3").attr('checked','checked')
+            }
+            if(jQuery.inArray('解决方案提供商',business)!=-1){
+                $("#4").attr('checked','checked')
+            }
+            if(jQuery.inArray('云服务提供商',business)!=-1){
+                $("#5").attr('checked','checked')
+            }
+            if(jQuery.inArray('其它',business)!=-1){
+                $("#6").attr('checked','checked')
+                $("#others").attr('value',business[business.length-1])
+                $("#others").show();
+            }
+            //同类产品
+            if("{$user['company_agent']}"){
+            if("{$user['company_agent']}"==1){
+                $("#yes").attr('checked','checked')
+            }else{
+                $("#no").attr('checked','checked')
+            }
+            }
+            //QQ
+            if("{$user['user_qq']}"){
+                $("#user_qq").val("{$user['user_qq']}");
+                $("#user_qq").parent().attr('class','right');
+            }
+            //备注
+            if("{$user['user_remark']}"){
+                $("#user_remark").val("{$user['user_remark']}");
+                $("#user_remark").parent().attr('class','right');
+            }
+        });
+    </script>
+</head>
+<body>
+<script type="text/javascript" src="http://accounts.grandcloud.cn/common/header?target=headerContainer"></script>
+<div class="top">
+    <div class="main" id="top-main">
+        <ul id="show-fixed">
+            <?php if ($user['user_name'] != '') { ?>
+            <li id="console"><a href="">控制台</a></li>
+            <li><a href="{$weblist['accounts']}cas/doLogout">退出</a></li>
+            <li><a href="{$weblist['accounts']}activity">账单</a></li>
+            <li><a href="{$weblist['accounts']}recharge">充值</a></li>
+            <li><a href="{$weblist['www']}support">售后支持</a></li>
+            <li><a href="{$weblist['accounts']}user/account_info"><?php echo $user['user_name'] ?></a></li>
+            <?php } else { ?>
+            <li><a href="http://accounts.grandcloud.cn/cas/register">注册</a></li>
+            <li><a href="http://accounts.grandcloud.cn/cas/login?forward=http://www.grandcloud.cn/">登录</a></li>
+            <?php } ?>
+        </ul>
+        <ul id="show-console">
+            <li><a href="https://hdc2.grandcloud.cn/">云主机</a></li>
+            <li><a href="http://c2.grandcloud.cn/#/ebses">云硬盘</a></li>
+            <li><a href="http://www.ku6vms.com/ ">视频云</a></li>
+            <li><a href="http://cs-console.grandcloud.cn/access">云存储</a></li>
+        </ul>
+    </div>
+</div>
+<div class="header">
+    <div class="main">
+        <a href="" id="logo"><i class="fl"></i></a>
+        <ul id="nav">
+            <li class=""><a href="http://www.grandcloud.cn/">首页</a></li>
+            <li class="triangle">云产品
+                <ul class="sub-nav">
+                    <li><a href="{$weblist['www']}product" onclick="browser.set('products_id', 0)" target="_blank">云主机</a></li>
+                    <li><a href="{$weblist['www']}product" onclick="browser.set('products_id', 1)" target="_blank">云硬盘</a></li>
+                    <li><a href="{$weblist['www']}product" onclick="browser.set('products_id', 2)" target="_blank">云分发</a></li>
+                    <li><a href="{$weblist['www']}product" onclick="browser.set('products_id', 3)" target="_blank">负载均衡</a></li>
+                    <li><a href="{$weblist['www']}product" onclick="browser.set('products_id', 4)" target="_blank">专享云</a></li>
+                    <li><a href="{$weblist['www']}product" onclick="browser.set('products_id', 5)" target="_blank">其他产品</a></li>
+                    <li><a href="{$weblist['www']}calculator" target="_blank">价格计算器</a></li>
+                </ul>
+            </li>
+            <li class="triangle">典型用户
+                <ul class="sub-nav">
+                    <li><a href="{$weblist['www']}users" onclick="browser.set('users_id', 0)" target="_blank">网站类</a></li>
+                    <li><a href="{$weblist['www']}users" onclick="browser.set('users_id', 1)" target="_blank">移动APP类</a></li>
+                    <li><a href="{$weblist['www']}users" onclick="browser.set('users_id', 2)" target="_blank">游戏类</a></li>
+                    <li><a href="{$weblist['www']}users" onclick="browser.set('users_id', 3)" target="_blank">大数据类</a></li>
+                </ul >
+            </li >
+            <li class="triangle">帮助与支持
+                <ul class="sub-nav">
+                    <li><a href="{$weblist['www']}help" onclick="browser.set('help_id', 0)" target="_blank">使用说明</a></li>
+                    <li><a href="{$weblist['www']}video" target="_blank">视频教程</a></li>
+                    <li><a href="{$weblist['www']}help"  onclick="browser.set('help_id', 9)" target="_blank">备案服务</a></li>
+                    <li><a href="{$weblist['www']}help" onclick="browser.set('help_id', 10)" target="_blank">其他FAQ</a></li>
+                </ul>
+            </li>
+            <li class="triangle">商务合作<ul class="sub-nav">
+                <li><a href="{$weblist['www']}channels" target="_blank">渠道合作</a></li>
+                <li><a href="http://channels.grandcloud.cn" target="_blank">渠道管理平台</a></li>
+                <?php if ($channels != false) { ?>
+
+                <?php } else { ?>
+                <?php } ?>
+            </ul>
+            </li>
+            <li class="triangle">关于我们
+                <ul class="sub-nav">
+                    <li><a href="{$weblist['www']}about" target="_blank">公司介绍</a></li>
+                    <li><a href="{$weblist['www']}platform" target="_blank">新闻动态</a></li>
+                    <li><a href="{$weblist['www']}about" onclick="browser.set('about_id', 1)" target="_blank">联系我们</a></li>
+                    <li><a href="{$weblist['www']}about" onclick="browser.set('about_id', 2)" target="_blank">友情链接</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="wrap apply">
+    <h1>渠道商在线申请</h1>
+    <form action="{:U('/Register/register')}" method="post" role="form"  id="company_register" enctype="multipart/form-data" onsubmit="return check()"><!--onsubmit="return check()"-->
+        <div id="company">
+            <ul class="apply_seft">
+                <li class=""><span>公司名称：<i>*</i></span><input type="text" name="company_name" placeholder="上海***有限公司" id="company_name"><b></b></li>
+                <li class=""><span>公司网址：<i>*</i></span><input type="text" name="company_website" placeholder="http://" id="company_website"><b></b></li>
+                <li class=""><span>注册资本：<i>*</i></span><input type="text" name="company_rc" placeholder="100(必须是一个正整数)" id="company_rc"><b></b><div class="unit">万</div></li>
+                <li class="guimo" style="position: relative;"><span>公司规模：<i>*</i></span><input type="text" class="center" name="company_size" placeholder="10-50" id="company_size"><i class="gmxl"></i>
+                    <div class="gsgm">
+                        <a href="javascript:;">10人以下</a>
+                        <a href="javascript:;">10-50</a>
+                        <a href="javascript:;">50-100</a>
+                        <a href="javascript:;">100-150</a>
+                        <a href="javascript:;">150-200</a>
+                    </div><b></b><div class="unit">人</div></li>
+                <li class=""><span>年销售额：<i>*</i></span><input type="text" name="company_sv" placeholder="100(必须是一个正整数)" id="company_sv"><b></b><div class="unit">万</div></li>
+                <li><span>固定电话：</span><input type="text" name="company_tel" placeholder="电话" id="company_tel"></li>
+                <li class=""><span>邮箱：<i>*</i></span><input type="text" name="company_email" placeholder="邮箱" id="company_email"><b></b></li>
+                <li class=""><span>公司地址：<i>*</i></span>
+                    <select id="select_province" name="province"></select>
+                    <select id="select_city" name="city"></select>
+                    <select id="select_area" name="area"></select>
+                    <input type="text" name="company_address" placeholder="详细地址" id="company_address"><b></b></li>
+                <li><span>主营业务：<i>*</i><br>（可多选）</span>
+                    <div class="ywxz">
+                        <input type="checkbox" name="business[]" value="IDC托管" id="1"><label for="1">IDC托管</label>
+                        <input type="checkbox" name="business[]" value="网站建设" id="2"><label for="2">网站建设</label>
+                        <input type="checkbox" name="business[]" value="APP外包" id="3"><label for="3">APP外包</label>
+                        <input type="checkbox" name="business[]" value="解决方案提供商" id="4"><label for="4">解决方案提供商</label><br>
+                        <input type="checkbox" name="business[]" value="云服务提供商" id="5"><label for="5">云服务提供商</label>
+                        <input type="checkbox" name="business[]" value="其它" id="6"><label for="6">其它:</label>
+                        <input type="text" class="ywother" name="others" id="others" style="display: none" sign="1" placeholder="不能出现中文逗号">
+                    </div>
+                </li>
+                <li><span>同类产品：<i>*</i><br>（代理）</span>
+                    <div class="ywxz">
+                        <input type="radio" name="company_agent" value="1" id="yes" checked="checked"><label for="yes">是</label>
+                        <input type="radio" name="company_agent" value="0" id="no"><label for="no">否</label>
+                    </div>
+                </li>
+                <li class="scfj"><span>附件：<i>*</i></span>
+                    <input type="button" value="上传附件" onclick='javascript:$("#company_licence").click()'>
+                    <input type="file" name="company_licence" id="company_licence" style="display: none" accept=".jpg,.jpeg,.gif,.png" tag="0"></li><!--为了使上传按钮好看，就使用了一个button按钮外加一个隐藏的file按钮--><!--tag用来标示照片上传照片大小，便于提交表单时检查-->
+                <li><span></span><div class="ywxz">你选择的文件的名称为：<span id="company_licence_file" style="width: auto;">未选择任何文件</span><br>上传营业执照副本即可，必须是最新年检日期<br>图片支持jpg、jpeg、gif、png格式，<i>小于300k</i></div></li>
+            </ul>
+            <div class="next">
+                <input type="button" value="下一步" id="next_step">
+            </div>
+        </div>
+        <div id="user">
+            <ul class="apply_seft">
+                <li class=""><span>联系人：<i>*</i></span><input type="text" name="user_name" id="user_name" placeholder="姓名"><b></b></li>
+                <li class=""><span>手机号码：<i>*</i></span><input type="text" name="user_phone" id="user_phone" placeholder="手机号码"><b></b></li>
+                <li><span>短信验证：<i>*</i></span><input type="text" name="verify" id="verify" placeholder="123456"><input type="button" value="免费获取验证码" onclick="mCaptcha();" id="sendcaptcha"></li>
+                <li class=""><span>邮箱：<i>*</i></span><input type="text" name="user_email" id="user_email" placeholder="邮箱"><b></b></li>
+                <li class=""><span>QQ：<i>*</i></span><input type="text" name="user_qq" id="user_qq" placeholder="123456789"><b></b></li>
+                <li><span>备注：</span><input type="text" name="user_remark" id="user_remark"></li>
+                <li class="scfj"><span>附件：<i>*</i></span><input type="button" value="上传身份证正面" onclick='javascript:$("#user_idcardfront").click()'>
+                    <input type="file" name="user_idcardfront" id="user_idcardfront" style="display: none" accept=".jpg,.jpeg,.gif,.png" tag="0"><!--tag用来标示照片上传照片大小，便于提交表单时检查-->
+                </li>
+                <li><span></span><div class="ywxz">你选择的文件的名称为：<span id="user_idcardfront_file" style="width: auto;">未选择任何文件</span><br>图片支持jpg、jpeg、gif、png格式，<i>小于300k</i></div></li>
+                <li class="scfj"><span></span><input type="button" value="上传身份证反面" onclick='javascript:$("#user_idcardback").click()'>
+                    <input type="file" name="user_idcardback" id="user_idcardback" style="display: none" accept=".jpg,.jpeg,.gif,.png" tag="0"><!--tag用来标示照片上传照片大小，便于提交表单时检查-->
+                </li>
+                <li><span></span><div class="ywxz">你选择的文件的名称为：<span id="user_idcardback_file" style="width: auto;">未选择任何文件</span><br>图片支持jpg、jpeg、gif、png格式，<i>小于300k</i></div></li>
+            </ul>
+            <div class="next">
+                <input type="button" value="上一步" value="上一步" id="back_step">
+                <input type="submit" value="确认提交">
+            </div>
+        </div>
+    </form>
+</div>
+<div class="clear"></div>
+<div class="footer">
+    <div class="message">
+        <div class="main">
+            <dl>
+                <dt>云产品</dt>
+                <dd><a href="{$weblist['www']}product" onclick="browser.set('products_id',0)" target="_blank">云主机</a></dd>
+                <dd><a href="{$weblist['www']}product" onclick="browser.set('products_id',3)" target="_blank">专享云</a></dd>
+                <dd><a href="{$weblist['www']}product" onclick="browser.set('products_id',4)" target="_blank">云存储</a></dd>
+                <dd><a href="{$weblist['www']}product" onclick="browser.set('products_id',1)" target="_blank">云硬盘</a></dd>
+                <dd><a href="{$weblist['www']}product" onclick="browser.set('products_id',5)" target="_blank">其他产品</a></dd>
+            </dl>
+            <dl>
+                <dt>帮助与支持</dt>
+                <dd><a href="{$weblist['www']}help" target="_blank">产品使用说明</a></dd>
+                <dd><a href="{$weblist['www']}video" target="_blank">视频教程</a></dd>
+                <dd><a href="video" onclick="browser.set('help_id',9)" target="_blank">备案服务</a></dd>
+                <dd><a href="video" onclick="browser.set('help_id',10)" target="_blank">其他FAQ</a></dd>
+
+            </dl>
+            <dl>
+                <dt>用户中心</dt>
+                <dd><a href="{$weblist['accounts']}recharge" target="_blank">充值</a></dd>
+                <dd><a href="{$weblist['accounts']}activity" target="_blank">按需账单</a></dd>
+                <dd><a href="{$weblist['accounts']}trans" target="_blank">交易记录</a></dd>
+                <dd><a href="{$weblist['accounts']}usage-report" target="_blank">使用记录</a></dd>
+                <dd><a href="{$weblist['accounts']}user/account_info" target="_blank">个人信息</a></dd>
+            </dl>
+
+            <dl>
+                <dt>盛大云</dt>
+                <dd><a href="{$weblist['www']}about?id=0" target="_blank">公司简介</a></dd>
+                <dd><a href="{$weblist['www']}platform" target="_blank">新闻动态</a></dd>
+                <dd><a href="{$weblist['www']}about" onclick="browser.set('about_id',1)" target="_blank">联系我们</a></dd>
+                <dd><a href="{$weblist['www']}about" onclick="browser.set('about_id',2)" target="_blank">友情链接</a></dd>
+            </dl>
+            <dl class="fr0">
+                <dt>联系我们</dt>
+                <dd><i class="phone"></i>电话：021-50370552</dd>
+                <dd><i class="weibo"></i>微博：盛大云计算</dd>
+                <dd><i class="email"></i>Email：support@grandcloud.cn</dd>
+
+            </dl>
+            <dl class="fr fr0">
+                <dt>&nbsp</dt>
+                <dd><img src="http://static.grandcloud.cn/www/media/v3/new/images/qr.jpg" alt="盛大云" id="qr"></dd>
+            </dl>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="main">
+            <p><a href="{$weblist['accounts']}user/agree" style="margin:0;color:#605f5f">用户协议</a>  |  版权声明 <br/>
+                Copyright © 2011-2014上海盛大网络发展有限公司  |  沪ICP备12023723号-1 </p>
+            <a href="" class="gs" alt="工商银行"></a>
+            <a href="" class="sd" alt="盛大网络"></a>
+
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

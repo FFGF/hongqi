@@ -1,0 +1,43 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="platCon">
+        <div class="platState white">
+            <div class="platTitle"><h2>提现方式</h2></div>
+			<empty name="bank">
+            <form action="{:U('UserInfo/bank')}" onsubmit="return check()" method="post">
+                <div class="certfBank">
+                    <div class="CBcon"><i></i><span>开户行</span><input type="text" name="bank_name" id="bank_name">&nbsp;&nbsp;&nbsp;&nbsp;填写完整信息(如浦发银行上海静安支行)</div>
+                    <div class="CBcon"><i></i><span>开户名称</span><input type="text" name="bank_user" id="bank_user"></div>
+                    <div class="CBcon"><i></i><span>银行卡号</span><input type="text" name="bank_no" id="bank_no" onkeyup="this.value=this.value.replace(/\D/g,'').replace(/....(?!$)/g,'$& ')" ></div>
+                    <div class="CBbtn"><input type="submit" value="提交" onclick="javascript:return confirm('提交之后不可修改，只能后台修改')"></div>
+                </div>
+            </form>
+			<else />
+			<div class="certfBank">
+				<div class="CBcon"><i></i><span>开  户  行</span>{$bank.bank_name}</div>
+				<div class="CBcon"><i></i><span>开户名称</span>{$bank.bank_user}</div>
+				<div class="CBcon"><i></i><span>银行卡号</span>{$bank.bank_no}</div>				
+			</div>			
+			</empty>
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        function check(){
+            if(!$("#bank_name").val()){
+                alert('请输入开户行');
+                return false;
+            }
+            if(!$("#bank_user").val()){
+                alert('请输入开户名称');
+                return false;
+            }
+            if(!$("#bank_no").val()){
+                alert('请输入银行卡号');
+                return false;
+            }
+        }
+    </script>
+</block>

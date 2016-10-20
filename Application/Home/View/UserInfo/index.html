@@ -1,0 +1,42 @@
+<extend name="Public/base"/>
+
+<block name="body">
+
+    <div class="platCon">
+        <div class="platState white">
+            <div class="platTitle"><h2>公司信息</h2></div>
+            <ul class="dataMyself">
+                <li><i></i><span>公司名称：</span>{$user['company_name']}</li>
+                <li><i></i><span>公司网址：</span>{$user['company_website']}</li>
+                <li><i></i><span>注册资本：</span>{$user['company_rc']}万</li>
+                <li><i></i><span>公司规模：</span>{$user['company_size']}人</li>
+                <li><i></i><span>年销售额：</span>{$user['company_sv']}万</li>
+                <li><i></i><span>固定电话：</span>{$user['company_tel']}</li>
+                <li><i></i><span>公司邮箱：</span>{$user['company_email']}</li>
+                <li><i></i><span>公司地址：</span>{$user['company_address']|formatCompanyAddress}</li>
+                <li><i></i><span>主营业务：</span>{$user['company_business']}</li>
+            </ul>
+        </div>
+        <div class="mt_30"></div>
+        <div class="platState white">
+            <div class="platTitle"><h2>个人信息</h2></div>
+            <ul class="dataMyself">
+                <li><i></i><span>联系人：</span>{$user['user_name']}</li>
+                <li><i></i><span>手机号码：</span>{$user['user_phone']}</li>
+                <li><i></i><span>邮箱：</span>{$user['user_email']}</li>
+                <li><i></i><span>QQ：</span>{$user['user_qq']}</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        $(function(){
+            $(".now").removeClass("now");
+            $(".icon4").next().next().children().eq(0).addClass('now');
+        });
+        $(".icon2").parent().removeClass("active arrowDown");
+        $(".icon4").parent().addClass("active arrowDown");
+    </script>
+</block>

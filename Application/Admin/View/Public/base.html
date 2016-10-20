@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>渠道商管理平台后台 V{$Think.THINK_VERSION} | 盛大云</title>
+    <link rel="stylesheet" type="text/css" href="__CSS__/style.css">
+    <script src="__JS__/jquery-1.11.0.min.js"></script>
+    <block name="style"></block>
+</head>
+
+<body>
+
+<div class="wrap">
+    <div class="platLeft">
+        <div class="platLogo"><a href=""><img src="__IMG__/platLogo.png"></a></div>
+        <ul class="platNav">
+
+
+            <li <if condition="CONTROLLER_NAME=='Charge'">class="active arrowDown"</if>>
+            <i class="icon icon3"></i>收费模块<i class="arrow"></i>
+            <ul class="childLi">
+                <li <if condition="CONTROLLER_NAME=='Charge' AND ACTION_NAME=='index'">class="now"</if>><a href="{:U('admin/charge/index')}">新生注册</a></li>
+                <li <if condition="CONTROLLER_NAME=='Charge' AND ACTION_NAME=='studentfile'">class="now"</if>><a href="{:U('admin/charge/studentfile')}">学生档案</a></li>
+                <li <if condition="CONTROLLER_NAME=='Charge' AND ACTION_NAME=='setchargestandard'">class="now"</if>><a href="{:U('admin/charge/setchargestandard')}">设定收费标准</a></li>
+            </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="platRight">
+        <div class="platTop">
+            <div class="Tit">红旗学校自动办公平台</div>
+            <div class="TopR">
+                <a href="{:U('admin/index/logout')}">退出</a>
+            </div>
+        </div>
+        <block name="body"></block>
+    </div>
+</div>
+<script type="text/javascript" src="__JS__/platform.js"></script>
+<script>
+    $('.sort > a').click(function(){
+        var link  = window.location.href.toString();
+        var type  = $(this).parent().attr('type');
+        var order = $(this).attr('class').split(' ')[0];
+        link = link.replace(/([?&-]type[=-])([^&-]*)/gi,"$1"+type);
+        link = link.replace(/([?&-]order[=-])([^&-]*)/gi,"$1"+order);
+        if(link.match(/[?&-]order[=-]/)==null){
+            link += (link.indexOf('?') == -1 ? '?' : '&') + "type="+type+"&order="+order;
+        }
+        window.location.href = link;
+    });
+</script>
+<block name="script"></block>
+</body>
+</html>

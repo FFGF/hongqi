@@ -1,0 +1,101 @@
+<extend name="Public/base"/>
+
+<block name="style"><link rel="stylesheet" href="__CSS__/BeatPicker.min.css"/></block>
+
+<block name="body">
+
+<div class="platCon">
+	<div class="platState white">
+		<div class="platTitle"><h2>客户订单</h2></div>
+		<i class="refresh" onclick="javascript:location.reload(true);" title="刷新当前页面"></i>
+		<div class="recordCou">
+			<div class="reSearch">				
+				<div class="reSearchM">
+					<form action="{:U('/customer/order')}" method="get">
+						<div class="couponState">
+							<input readonly class="coupState" name="status" type="text" class="center" placeholder="交易类型">
+							<i></i>
+							<div class="couSta" >
+								<b>交易类型</b>
+								<b>充值</b>
+								<b>消费</b>
+								<b>返还</b>
+                                <b>赠送</b>
+							</div>
+						</div>
+						<input type="hide" name="s_time" style="width:0px;" /><input type="hide" name="e_time" style="width:0px;" />
+						<div class="changeDate">
+							<input type="text" id="s_time" data-beatpicker="true" data-beatpicker-module="clear" placeholder="开始时间" />
+							<input type="text" id="e_time" data-beatpicker="true" data-beatpicker-module="clear" placeholder="结束时间" />
+						</div>							
+						<input type="submit" class="searchTo" value="搜索" onclick="javascript:format_changeDate('s_time','e_time');">
+					</form>					
+				</div>
+				
+				<div class="RCsearch">
+				<form action="{:U('/customer/order')}" method="get">
+					<input class="sear" type="text" name="k_str" placeholder="搜索：手机、联系人">
+						<input type="submit" class="searchTo" value="搜索" onclick="javascript:format_changeDate('s_time','e_time');">
+				</form>
+				</div>
+				<div class="change"><a href="javascript:;" class="RCsearchSimple">简易</a>>	</div>
+			</div>
+			<table class="customer_order" cellspacing="0" cellpadding="0">
+				<thead>
+					<tr>
+						<th width="60" class="leftradiu">序号</th>
+						<th width="200" class="lan">ID</th>
+						<th width="100">交易类型</th>
+						<th width="160" class="lan">交易时间
+                            <div class="sort" type="time">
+                                <a class="asc  <if condition="($Think.request.order eq 'asc') AND ($Think.request.type eq 'time') "> now</if>" title="从小到大"></a>
+                                <a class="desc <if condition="($Think.request.order eq 'desc') AND ($Think.request.type eq 'time') ">now</if> " title="从大到小"></a>
+                            </div>
+                        </th>
+						<th width="100">联系人</th>
+						<th width="150" class="lan">手机</th>
+						<th width="100">交易金额</th>
+						<th width="100" class="lan">返佣比例</th>
+						<th width="100" class="rightradiu">返佣金额
+                            <div class="sort" type="sums">
+                                <a class="asc  <if condition="($Think.request.order eq 'asc') AND ($Think.request.type eq 'sums') ">now</if>" title="从小到大"></a>
+                                <a class="desc <if condition="($Think.request.order eq 'desc') AND ($Think.request.type eq 'sums') ">now</if> " title="从大到小"></a>
+                            </div>
+                        </th>
+					</tr>
+				</thead>
+				<tbody>
+				<notempty name="_list">
+					<volist name="_list" id="vo" key="k">
+						<tr>
+							<td>{$k}</td>
+							<td>{$vo.user_id}</td>							
+                            <td title="{$vo.transaction_desc}">{$vo.payment_trans_type_id|formatPaymentTransType}</td>
+							<td>{$vo.transaction_date}</td>							
+							<td>{$vo.user_name}</td>
+							<td>{$vo.user_phone}</td>
+							<td>{$vo.amount|formatAmount}</td>
+							<td>{$vo.proportion}</td>
+							<td>{$vo.proportion_amount}</td>
+						</tr> 
+					</volist>
+                <else/>
+					<tr><td colspan="9" class="text-center"> Oh! 暂时还没有内容! </td></tr>
+				</notempty>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="9"></td>
+					</tr>
+				</tfoot>
+			</table>
+			<div class="page">				{$_page}			</div>
+		</div>
+	</div>
+</div>
+
+</block>
+<block name="script">
+<script src="__JS__/BeatPicker.min.js"></script> <script src="__JS__/changeDate.js"></script>
+<script><if condition="($Think.request.status neq '') OR ($Think.request.s_time neq '') OR ($Think.request.e_time neq '') ">toggel("reSearchM");<else />toggel("RCsearch");</if></script>
+</block>

@@ -1,0 +1,40 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="platCon">
+        <div class="platState white">
+            <a class="refresh" onclick="javascript:location.reload(true);" title="刷新当前页面"></a>
+            <div class="platTitle"><h2>营业执照</h2></div>
+            <div class="certificate">
+                <img src="{$user['company_licence']}" width="570">
+            </div>
+        </div>
+        <div class="mt_30"></div>
+        <div class="platState white">
+            <a class="refresh" onclick="javascript:location.reload(true);" title="刷新当前页面"></a>
+            <div class="platTitle"><h2>身份证</h2></div>
+            <div class="certificate">
+                <div class="certId">
+                    <i></i><span>正面</span>
+                    <img src="{$user['user_idcardfront']}" width="360">
+                </div>
+                <div class="certId mr_60">
+                    <i></i><span>反面</span>
+                    <img src="{$user['user_idcardback']}" width="360">
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        $(function(){
+            $(".now").removeClass('now');
+            $(".icon4").next().next().children().eq(1).addClass('now')
+        });
+        $(".icon2").parent().removeClass("active arrowDown");
+        $(".icon4").parent().addClass("active arrowDown");
+    </script>
+</block>

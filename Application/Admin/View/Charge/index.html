@@ -1,0 +1,83 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="platCon">
+        <div class="platState white">
+            <div class="platTitle"><h2>新生注册</h2></div>
+            <div class="recordCou">
+                <form action="{:U('admin/Charge/index')}" method="post" enctype="multipart/form-data" onsubmit=" return check()">
+                <ul class="dataMyself">
+                        <li><i></i><span>学生学号：</span><input type="text" name="student_id" placeholder="12121612" id="student_id"><b></b></li>
+                        <li><i></i><span>学生姓名：</span><input type="text" name="student_name" placeholder="张三" id="student_name"><b></b></li>
+                        <li><i></i><span>学生民族：</span><input type="text" name="student_nation" placeholder="汉族" id="student_nation"><b></b></li>
+                        <li><i></i><span>学生性别：</span>
+                            <label for="0">男</label> <input type="radio" checked="checked" name="student_sex" value="男" id="0" >
+                            <label for="1" style="padding-left: 20px">女</label> <input type="radio"  name="student_sex" value="女" id="1" >
+                            <b></b></li>
+                        <li><i></i><span>出生年月：</span><select name='student_year' class="sel_year" rel="1993" style="width: 50px"> </select> 年
+                            <select name='student_month' class="sel_month" rel="7" style="width: 50px"> </select> 月
+                            <select name='student_day' class="sel_day" rel="8" style="width: 50px"> </select> 日 </li>
+
+                        <li><i></i><span>学生家庭地址：</span>
+                            <select id="student_province" name="student_province"></select>
+                            <select id="student_city" name="student_city"></select>
+                            <select id="student_area" name="student_area"></select>
+                            <input type="text" name="student_address" placeholder="详细地址" id="student_address"><b></b></li>
+                        <li><i></i><span>父亲：</span><input type="text" name="student_father" placeholder="张父" id="student_father"><b></b></li>
+                        <li><i></i><span>父亲电话：</span><input type="text" name="student_father_phone" placeholder="18818217017" id="student_father_phone"><b></b></li>
+                        <li><i></i><span>母亲：</span><input type="text" name="student_mother" placeholder="张母" id="student_mother"><b></b></li>
+                        <li><i></i><span>母亲电话：</span><input type="text" name="student_mother_phone" placeholder="18818217017" id="student_mother_phone"><b></b></li>
+                </ul>
+
+                    <ul class="apply_seft">
+                        <li class="scfj" style="margin-left: -100px;"><span style="font-size: 16px">学生照片：<i></i></span>
+                            <input type="button" value="上传照片" onclick='javascript:$("#student_photo").click()'>
+                            <input type="file" name="student_photo" id="student_photo" style="display: none" accept=".jpg,.jpeg,.gif,.png" tag="0"></li><!--为了使上传按钮好看，就使用了一个button按钮外加一个隐藏的file按钮--><!--tag用来标示照片上传照片大小，便于提交表单时检查-->
+                        <li><span></span><div class="ywxz" style="float:left;margin-left: -60px;">你选择的文件的名称为：<span id="student_photo_file" style="width: auto;">未选择任何文件</span><br>上传营业执照副本即可，必须是最新年检日期<br>图片支持jpg、jpeg、gif、png格式，<i>小于300k</i></div></li>
+                    </ul>
+                    <li><input type="submit" class="excesssave" value="提交" style="float: left;margin-left: 90px;"></li>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</block>
+<block name="script">
+    <script type="text/javascript" src="__JS__/hongQiRegister.js"></script>
+    <script type="text/javascript" src="__JS__/birthday.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $.ms_DatePicker({
+                YearSelector: ".sel_year",
+                MonthSelector: ".sel_month",
+                DaySelector: ".sel_day"
+            });
+
+            region_init("student_province","student_city","student_area");
+
+        })
+
+        function check(){
+            var filepath = $("input[name='student_photo']").val();
+            var extStart = filepath.lastIndexOf(".");
+            var ext = filepath.substring(extStart, filepath.length).toUpperCase();
+            if (ext != ".PNG" && ext != ".GIF" && ext != ".JPG" && ext != ".JPEG") {
+                alert("营业执照图片限于png,gif,jpeg,jpg格式");
+                return false;
+            }
+            if ($("#student_photo").attr('tag') > 300) {
+                alert("上传的营业执照图片大小不能超过300KB！");
+                return false;
+            }
+        }
+
+
+    </script>
+</block>
+<block name="style"><style>/* 资料管理-银行帐户 */
+.certfBank{ width: 790px; margin-left: 80px; margin-top: 0px; overflow: hidden; margin-bottom: 100px;}
+.CBcon{ margin-bottom: 30px;}
+.CBcon i{ width: 3px; height: 15px; background: #2e97de; display: inline-block; vertical-align: middle;}
+.CBcon span{ width: 75px; margin-left: 15px; font-size: 16px; color: #444; display: inline-block; vertical-align: middle;}
+.CBcon input{ width: 200px; height: 35px; border: 1px solid #2e97de; border-radius: 4px; text-indent: 1em; vertical-align: middle; line-height: 35px;}
+</style></block>
