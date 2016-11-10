@@ -1,0 +1,395 @@
+<!--<extend name="Public/base"/>-->
+
+
+
+<!--<block name="body">-->
+    <!--<div class="platCon">-->
+        <!--<div class="platState white">-->
+            <!--<div class="platTitle"><h2>新生注册</h2></div>-->
+            <!--<div class="recordCou">-->
+                <!--<form action="{:U('admin/Charge/index')}" method="post" enctype="multipart/form-data" onsubmit=" return check()">-->
+                    <!--<table class="table">-->
+                        <!--<tbody>-->
+                            <!--<tr>-->
+                                <!--<td>姓名</td>-->
+                                <!--<td><input type="text" name="student_name" placeholder="张三" id="student_name"></td>-->
+                                <!--<td>性别</td>-->
+                                <!--<td>-->
+                                    <!--<label for="5">男</label> <input type="radio" checked="checked" name="student_sex" value="男" id="5" >-->
+                                    <!--<label for="6" style="padding-left: 20px">女</label> <input type="radio"  name="student_sex" value="女" id="6" >-->
+                                <!--</td>-->
+                                <!--<td>学号</td>-->
+                                <!--<td><input type="text" name="student_id" placeholder="12121612" id="student_id"></td>-->
+                                <!--<td>民族</td>-->
+                                <!--<td><input type="text" name="student_nation" placeholder="汉族" id="student_nation"></td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>出生年月</td>-->
+                                <!--<td><select name='student_year' class="sel_year" rel="1993" style="width: 50px"> </select> 年-->
+                                    <!--<select name='student_month' class="sel_month" rel="7" style="width: 50px"> </select> 月-->
+                                   <!--</li></td>-->
+                                <!--<td>籍贯</td>-->
+                                <!--<td><input type="text" name="student_native" placeholder="项城" id="student_native"></td>-->
+                                <!--<td>家庭地址</td>-->
+                                <!--<td colspan="3">-->
+                                    <!--<input type="text" name="student_address" id="student_address" placeholder="**省**市**乡**村" style="width: 300px;">-->
+                                <!--</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>隶属年级</td>-->
+                                <!--<td><input type="text" name="student_grade" placeholder="七年级" id="student_grade"></td>-->
+                                <!--<td>是否住宿</td>-->
+                                <!--<td> <label for="13">是</label> <input type="radio" checked="checked" name="student_accommodation" value="是" id="13" >-->
+                                    <!--<label for="14" style="padding-left: 20px">否</label> <input type="radio"  name="student_accommodation" value="否" id="14" ></td>-->
+                                <!--<td>是否包餐</td>-->
+                                <!--<td>  <label for="9">是</label> <input type="radio" checked="checked" name="student_meal" value="是" id="9" >-->
+                                    <!--<label for="10" style="padding-left: 20px">否</label> <input type="radio"  name="student_meal" value="否" id="10" ></td>-->
+                                <!--<td>是否保险</td>-->
+                                <!--<td>  <label for="7">是</label> <input type="radio" checked="checked" name="student_insurance" value="是" id="7" >-->
+                                    <!--<label for="8" style="padding-left: 20px">否</label> <input type="radio"  name="student_insurance" value="否" id="8" >·</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>父亲姓名</td>-->
+                                <!--<td><input type="text" name="student_father" placeholder="张父" id="student_father"></td>-->
+                                <!--<td>联系电话</td>-->
+                                <!--<td><input type="text" name="student_father_phone" placeholder="18818217017" id="student_father_phone"></td>-->
+                                <!--<td>母亲姓名</td>-->
+                                <!--<td><input type="text" name="student_mother" placeholder="张母" id="student_mother"></td>-->
+                                <!--<td>联系电话</td>-->
+                                <!--<td><input type="text" name="student_mother_phone" placeholder="18818217017" id="student_mother_phone"></td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>隶属班级</td>-->
+                                <!--<td><input type="text" name="student_class" placeholder="七班" id="student_class"></td>-->
+                                <!--<td>寝室编号</td>-->
+                                <!--<td><input type="text" name="student_dorm_number" placeholder="203" id="student_dorm_number"></td>-->
+                                <!--<td>学生卡号</td>-->
+                                <!--<td><input type="text" name="student_card" placeholder="12121612" id="student_card"></td>-->
+                                <!--<td>在校状态</td>-->
+                                <!--<td>   <label for="1">在校</label> <input type="radio" checked="checked" name="student_status" value="在校" id="1" >-->
+                                    <!--<label for="2" style="padding-left: 10px">退学</label> <input type="radio"  name="student_status" value="退学" id="2" >-->
+                                    <!--<label for="3" style="padding-left: 10px">休学</label> <input type="radio"  name="student_status" value="休学" id="3" >-->
+                                    <!--<label for="4" style="padding-left: 10px">转学</label> <input type="radio"  name="student_status" value="转学" id="4" ></td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>校区</td>-->
+                                <!--<td><input type="text" name="student_campus" placeholder="本部" id="student_campus"></td>-->
+                                <!--<td>学生照片</td>-->
+                                <!--<td><input type="file"></td>-->
+                                <!--<td>注册介绍人</td>-->
+                                <!--<td><input type="text"></td>-->
+                                <!--<td>注册时间</td>-->
+                                <!--<td>-->
+                                       <!--<input type="text" id="s_time" data-beatpicker="true" data-beatpicker-module="clear" placeholder="日报日期" class="beatpicker-input beatpicker-inputnode" readonly="readonly" data-beatpicker-id="beatpicker-0">-->
+                                <!--</td>-->
+                            <!--</tr>-->
+                        <!--</tbody>-->
+                    <!--</table>-->
+                    <!--<li><input type="submit" class="excesssave" value="保存" style="float: right;margin-right: 180px;"></li>-->
+                <!--</form>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</block>-->
+<!--<block name="script">-->
+    <!--<script type="text/javascript" src="__JS__/hongQiRegister.js"></script>-->
+    <!--<script type="text/javascript" src="__JS__/birthday.js"></script>-->
+    <!--<script type="text/javascript">-->
+        <!--$(function(){-->
+            <!--$.ms_DatePicker({-->
+                <!--YearSelector: ".sel_year",-->
+                <!--MonthSelector: ".sel_month",-->
+                <!--DaySelector: ".sel_day"-->
+            <!--});-->
+
+            <!--region_init("student_province","student_city","student_area");-->
+
+        <!--})-->
+
+        <!--function check(){-->
+            <!--var filepath = $("input[name='student_photo']").val();-->
+            <!--var extStart = filepath.lastIndexOf(".");-->
+            <!--var ext = filepath.substring(extStart, filepath.length).toUpperCase();-->
+            <!--if (ext != ".PNG" && ext != ".GIF" && ext != ".JPG" && ext != ".JPEG") {-->
+                <!--alert("营业执照图片限于png,gif,jpeg,jpg格式");-->
+                <!--return false;-->
+            <!--}-->
+            <!--if ($("#student_photo").attr('tag') > 300) {-->
+                <!--alert("上传的营业执照图片大小不能超过300KB！");-->
+                <!--return false;-->
+            <!--}-->
+        <!--}-->
+    <!--</script>-->
+<!--</block>-->
+<!--<block name="style"><style>/* 资料管理-银行帐户 */-->
+<!--.certfBank{ width: 790px; margin-left: 80px; margin-top: 0px; overflow: hidden; margin-bottom: 100px;}-->
+<!--.CBcon{ margin-bottom: 30px;}-->
+<!--.CBcon i{ width: 3px; height: 15px; background: #2e97de; display: inline-block; vertical-align: middle;}-->
+<!--.CBcon span{ width: 75px; margin-left: 15px; font-size: 16px; color: #444; display: inline-block; vertical-align: middle;}-->
+<!--.CBcon input{ width: 200px; height: 35px; border: 1px solid #2e97de; border-radius: 4px; text-indent: 1em; vertical-align: middle; line-height: 35px;}-->
+<!--</style></block>-->
+
+<extend name="Public/base"/>
+
+<block name="style">
+    <link rel="stylesheet" href="__CSS__/BeatPicker.min.css"/>
+    <script src="__JS__/BeatPicker.min.js"></script>
+    <script type="text/javascript" src="__JS__/changeDate.js"></script>
+    <script type="text/javascript" src="__JS__/yuanlu.js"></script>
+</block>
+
+<block name="body">
+    <div class="platCon">
+        <div class="platState white">
+            <div class="platTitle"><h2>银行日报录入</h2></div>
+            <i class="refresh" onclick="javascript:location.reload(true);" title="刷新当前页面"></i>
+            <div class="recordCou">
+                <form id="form1" action="{:U('admin/Report/getUserDataBank')}" method="get" onsubmit="return checkDate()">
+                    <li><input type="hide" name="s_time" style="width:0px;">
+                        <div class="changeDateA">
+                            <div class="input-parent input-container"><input type="text" id="s_time" data-beatpicker="true" data-beatpicker-module="clear" placeholder="日报日期" class="beatpicker-input beatpicker-inputnode" readonly="readonly" data-beatpicker-id="beatpicker-0"></div>
+                        </div>
+                        <input type="submit" class="searchTo" value="搜索" onclick="javascript:format_changeDate('s_time','e_time');">
+                        <input type="submit" class="searchTo" value="筛选" onclick="changeAction()">
+                    </li>
+                </form>
+                <if condition="$flag eq 1">
+                    <table class="table" cellspacing="0" cellpadding="0">
+                        <thead>
+                        <th width="5%" class="leftradiu lan">序号</th>
+                        <th width="9%" >项目</th>
+                        <th width="9%" class="lan">资产现金</th>
+                        <th width="9%">资产品</th>
+                        <th width="10%" class="lan">融资负债/授信</th>
+                        <th width="5%">应收</th>
+                        <th width="8%" class="lan">应付</th>
+                        <th width="8%">备注</th>
+                        <th width="8%" class="rightradiu lan" >操作</th>
+                        </thead>
+                        <tbody>
+                        <volist name="userdata" id="vo">
+                            <tr>
+                                <td>{$vo.project_id}</td>
+                                <td>{$vo.name}</td>
+                                <td>{$vo.asset_money}</td>
+                                <td>{$vo.asset_product}</td>
+                                <td>{$vo.finance_debt}</td>
+                                <td>{$vo.receivable}</td>
+                                <td>{$vo.payable}</td>
+                                <td>{$vo.remark}</td>
+                                <if  condition="$vo.category eq 1">
+                                    <td><input class="Auditing" type="button" onclick="change(this.parentNode.parentNode,value)" value="修改"></td>
+                                    <else/>
+                                    <td></td>
+                                </if>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                    <else/>
+                    <if condition="$bank eq 1">
+                        <form action="{:U('admin/Report/saveData')}" method="post">
+                            <input type="hide" name="s_time1" style="width:0px;">
+                            <table class="table" cellspacing="0" cellpadding="0">
+                                <thead>
+                                <th width="9%" class="leftradiu"></th>
+                                <th width="9%" class="lan">资产现金</th>
+                                <th width="9%">资产品</th>
+                                <th width="14%" class="lan">融资负债/授信</th>
+                                <th width="5%">应收</th>
+                                <th width="8%" class="lan">应付</th>
+                                <th width="8%" class="rightradiu">备注</th>
+                                </thead>
+                                <volist name="bankdata" id="vo">
+                                    <volist name="vo" id="item">
+                                        <if condition="$item.category eq 1">
+                                            <tr>
+                                                <td>{$item.name}</td>
+                                                <td><input type="text" size="15" name='asset_money<?php echo ($item["id"]); ?>'></td>
+                                                <td><input type="text" size="15" name='asset_product<?php echo ($item["id"]); ?>'></td>
+                                                <td><input type="text" size="15" name='finance_debt<?php echo ($item["id"]); ?>'></td>
+                                                <td><input type="text" size="15" name='receivable<?php echo ($item["id"]); ?>'></td>
+                                                <td><input type="text" size="15" name='payable<?php echo ($item["id"]); ?>'></td>
+                                                <td><input type="text" size="15" name='remark<?php echo ($item["id"]); ?>'></td>
+                                            </tr>
+                                            <else/>
+                                            <tr>
+                                                <td>{$item.name}</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </if>
+                                        <tr>
+                                    </volist>
+                                </volist>
+                            </table>
+                            <div class="derivedata">
+                                <input type="submit"  value="提交" onclick="javascript:format_changeDate('s_time','e_time');">
+                            </div>
+                        </form>
+                        <else/>
+                        <form action="{:U('admin/Report/saveData')}" method="post" onsubmit="return checkDate2()">
+                            <input type="hide" name="s_time2" style="width: 0px">
+                            <volist name="bankdata" id="vo">
+                                {$key}
+                                <table class="table" cellspacing="0" cellpadding="0">
+                                    <thead>
+                                    <th width="9%" class="leftradiu"></th>
+                                    <th width="9%" class="lan">资产现金</th>
+                                    <th width="9%">资产品</th>
+                                    <th width="14%" class="lan">融资负债/授信</th>
+                                    <th width="5%">应收</th>
+                                    <th width="8%" class="lan">应付</th>
+                                    <th width="8%" class="rightradiu">备注</th>
+                                    </thead>
+                                    <volist name="vo" id="item">
+                                        <if condition="$item.category eq 1">
+                                            <tr>
+                                                <td>{$item.name}</td>
+                                                <td><input type="text" size="15" name='asset_money<?php echo ($item["id"]); ?>'></td>
+                                                <td><input type="text" size="15" name='asset_product<?php echo ($item["id"]); ?>'></td>
+                                                <td><input type="text" size="15" name='finance_debt<?php echo ($item["id"]); ?>'></td>
+                                                <td><input type="text" size="15" name='receivable<?php echo ($item["id"]); ?>'></td>
+                                                <td><input type="text" size="15" name='payable<?php echo ($item["id"]); ?>'></td>
+                                                <td><input type="text" size="15" name='remark<?php echo ($item["id"]); ?>'></td>
+                                            </tr>
+                                            <else/>
+                                            <tr>
+                                                <td>{$item.name}</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </if>
+                                        <tr>
+                                    </volist>
+                                </table>
+                            </volist>
+                            <div class="derivedata">
+                                <input type="submit"  value="提交" onclick="javascript:format_changeDate('s_time','e_time');">
+                            </div>
+                        </form>
+                    </if>
+
+                </if>
+            </div>
+        </div>
+    </div>
+
+    <div class="auditingFrame">
+        <div class="aFtitle">等级修改</div>
+        <div class="aFcona">
+            <form>
+                <table class="table" cellspacing="0" cellpadding="0">
+                    <thead>
+                    <th width="5%" class="leftradiu lan">序号</th>
+                    <th width="9%" >项目</th>
+                    <th width="9%" class="lan">可用资金</th>
+                    <th width="9%">保证金</th>
+                    <th width="14%" class="lan">融资负债/授信</th>
+                    <th width="5%">应收</th>
+                    <th width="8%" class="lan">应付</th>
+                    <th width="8%">备注</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td id="id" style="width:60px;overflow-x:visible;overflow-y:visible;"></td>
+                        <td id="name" style="width:60px;overflow-x:visible;overflow-y:visible;"></td>
+                        <td><input  style="width:60px;overflow-x:visible;overflow-y:visible;" id="asset_money" name="asset_money"></td>
+                        <td><input  style="width:60px;overflow-x:visible;overflow-y:visible;" id="asset_product" name="asset_product"></td>
+                        <td><input  style="width:60px;overflow-x:visible;overflow-y:visible;" id="finance_debt" name="finance_debt"></td>
+                        <td><input  style="width:60px;overflow-x:visible;overflow-y:visible;" id="receivable" name="receivable"></td>
+                        <td><input  style="width:60px;overflow-x:visible;overflow-y:visible;" id="payable" name="payable"></td>
+                        <td><input  style="width:60px;overflow-x:visible;overflow-y:visible;" id="remark" name="remark"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <input id="update" type="button" name="update" value="更新" class="adopt" onclick="updateData()">
+            </form>
+        </div>
+        <i class="info_close"></i>
+    </div>
+    <div class="info_bg"></div>
+
+</block>
+
+<block name="script">
+    <script><if condition="($Think.request.status neq '') OR ($Think.request.s_time neq '') OR ($Think.request.e_time neq '') ">toggel("reSearchM");<else />toggel("RCsearch");</if></script>
+    <script type="text/javascript">
+        function changeAction(){
+            $("#form1").attr('action',"{:U('admin/Report/getUserDataBank?bank=1')}")
+            format_changeDate('s_time','e_time')
+        }
+        //关闭按钮
+        $(".info_close").click(function(){
+            $(".info_bg").hide();
+            $(".auditingFrame").hide();
+        })
+        //通修改按钮对table里的数据进行修改
+        function change(row,val) {
+            $("#id")[0].innerHTML = row.cells[0].innerHTML
+            $("#name")[0].innerHTML = row.cells[1].innerHTML
+            $("#asset_money").val(row.cells[2].innerHTML)
+            $("#asset_product").val(row.cells[3].innerHTML)
+            $("#finance_debt").val(row.cells[4].innerHTML)
+            $("#receivable").val(row.cells[5].innerHTML)
+            $("#payable").val(row.cells[6].innerHTML)
+            $("#remark").val(row.cells[7].innerHTML)
+            $("#fromlevel").val(val)
+            $(".info_bg").show();
+            $(".auditingFrame").show();
+            $(".auditingFrame").css({
+                top: function(index, value) {
+                    return $(window).scrollTop() + ($(window).height()/2);
+                }
+            });
+        }
+        function updateData(){
+            var data = {"id": $('#id')[0].innerHTML,
+                "asset_money":$('#asset_money').val(),
+                "asset_product":$('#asset_product').val(),
+                "finance_debt":$('#finance_debt').val(),
+                "receivable":$('#receivable').val(),
+                "payable":$('#payable').val(),
+                "remark":$('#remark').val()
+            };
+            var url = "/admin/" + "report-updatedata.html";
+            $.getJSON(url,data,function(response){
+                if(response.code==1){
+                    alert('数据更改成功');
+                    $(".info_bg").hide();
+                    $(".auditingFrame").hide();
+                    window.location.reload()//刷新当前页面.
+                }else if(response.code==0){
+                    alert('数据更改失败');
+                    $(".info_bg").hide();
+                    $(".auditingFrame").hide();
+                    window.location.reload()//刷新当前页面.
+                }
+            })
+        }
+        $(function () {
+            if("{:session('s_time')}"){
+                $('#s_time').val("{:date('Y-m-d',session('s_time'))}");
+                $("input[name='s_time1']").val("{:session('s_time')}")
+            }
+        })
+        function checkDate2(){
+            if($("input[name='s_time2']").val() == ''){
+                alert('日期不能为空')
+                return false;
+            }else{
+                return true;
+            }
+        }
+
+    </script>
+</block>

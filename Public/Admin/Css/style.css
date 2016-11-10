@@ -85,7 +85,7 @@ i,b{ font-style: normal; font-weight: 100;}
 /* 表格部分 */
 .leftradiu{ border-radius: 5px 0 0 0;}
 .rightradiu{ border-radius: 0 5px 0 0;}
-.table{ border: 0px; width: 95%; margin: 0 auto;}
+.table{ border: 0px; width: 85%;}
 .table thead tr th.lan{ background: #73c7ff;}
 .table thead tr th{ height: 50px; line-height: 50px; text-align: center; font-size: 15px; color: #fff; background: #2e97de; font-weight: 100;}
 .table thead tr th.font12{ font-size: 14px;}
@@ -96,7 +96,7 @@ i,b{ font-style: normal; font-weight: 100;}
 .table tbody tr:nth-child(2n) td:nth-child(2n){background: #bfb9b980;}
 .table tbody tr:nth-child(2n+1) td:nth-child(2n+1){ background: #e3e3e3;}
 .table tfoot tr{ background: #34495e; height: 16px; width: 100%}
-.table tbody tr td:nth-child(1),.customer_order thead tr th:nth-child(1){ font-weight: bold;}
+/*.table tbody tr td:nth-child(1),.customer_order thead tr th:nth-child(1){ font-weight: bold;}*/
 /* 分页按钮 */
 .page{ width: 100%; padding-top: 30px; padding-bottom: 30px; background: #fff; font-size: 0; text-align: center;}
 .page a,.current,.rows{ display: inline-block; padding: 0 8px; line-height: 22px; border: 1px solid #2e97de; margin: 0 1px; font-size: 12px; cursor: pointer; border-radius: 1px;  color: #2e97de;}
@@ -262,3 +262,9 @@ i,b{ font-style: normal; font-weight: 100;}
 .eCon input{ width: 510px; height: 25px; border:1px solid #cecece; border-radius: 4px; float: right; text-indent: 1em;}
 .eCBtn{ width: 145px; height: 35px; background: #2e97de; color: #fff; font-size: 14px; border-radius: 4px;  float: right; margin-top: 50px;}
 /* 写信页面结束 */
+
+/* 学生档案界面*/
+.platTitle h3{display: inline-block;font-size: 20px;margin-left: 20%;}
+
+
+

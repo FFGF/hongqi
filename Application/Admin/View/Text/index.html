@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>selectList</title>
+    <style type="text/css">
+        *{margin:0;padding:0;}
+        .selectList{width:200px;margin:50px auto;}
+    </style>
+    <script src="__JS__/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+<div class="selectList">
+    <select class="grade">
+        <option>请选择</option>
+    </select>
+    <select class="class">
+        <option>请选择</option>
+    </select>
+</div>
+<script type="text/javascript">
+    $(function(){
+        $(".selectList").each(function(){
+            var  url = "/admin/" + "text-index1.html"
+//            var url = "grade.json";
+            var gradeJson;
+            //获取json数据
+            $.getJSON(url,function(data){
+                gradeJson = data;
+//                console.log(gradeJson)
+                grade();
+            });
+
+            var temp_html;
+            var ograde = $(this).find(".grade");
+            var oclass = $(this).find(".class");
+//初始化年级
+            var grade = function(){
+                $.each(gradeJson,function(i,grade){
+                    temp_html+="<option value='"+grade.g+"'>"+grade.g+"</option>";
+                });
+                ograde.html(temp_html);
+                classf();
+            };
+//赋值班级
+            var classf = function(){
+                temp_html = "";
+                var n = ograde.get(0).selectedIndex;
+                $.each(gradeJson[n].c,function(i,cl){
+                    temp_html+="<option value='"+cl.cl+"'>"+cl.cl+"</option>";
+                });
+                oclass.html(temp_html);
+
+            };
+//选择年级
+            ograde.change(function(){
+                classf();
+            });
+
+        });
+    });
+</script>
+</body>
+</html>

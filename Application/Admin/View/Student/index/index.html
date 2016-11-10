@@ -1,0 +1,86 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="platCon">
+        <div class="platState white">
+            <div class="platTitle"><h2>收费管理</h2></div>
+            <div class="recordCou">
+               <div class="indexIndex">
+
+                   <div class="block">
+                       <a href="{:U('admin/student/schoolstructure')}"><img src="__IMG__/grade.png" ></a>
+                       <b class="b"><a href="{:U('admin/student/schoolstructure')}">学校结构</a></b>
+                   </div>
+
+                   <div class="block">
+                       <a href="{:U('admin/student/studentFile')}"><img src="__IMG__/studentRegister.png" ></a>
+                       <b class="b"><a href="{:U('admin/student/studentFile')}">学生档案</a></b>
+                   </div>
+
+
+                   <div class="block">
+                       <a href="{:U('admin/Charge/createchargetask')}"><img src="__IMG__/chargeTask.png" ></a>
+                       <b class="b"><a href="{:U('admin/Charge/createchargetask')}">新建任务</a></b>
+                   </div>
+
+                   <div class="block">
+                       <a href="{:U('admin/Charge/receiveitem')}"><img src="__IMG__/payment.png" ></a>
+                       <b class="b"><a href="{:U('admin/Charge/receiveitem')}">前台收款</a></b>
+                   </div>
+
+                   <div class="block">
+                       <a href="{:U('admin/charge/reduceTuition')}"><img src="__IMG__/chargeStandard.png" ></a>
+                       <b class="b"><a href="{:U('admin/charge/reduceTuition')}">减免费办理</a></b>
+                   </div>
+
+                   <div class="block">
+                       <a href="{:U('admin/charge/returnMoney')}"><img src="__IMG__/returnMoney.png" ></a>
+                       <b class="b"><a href="{:U('admin/charge/returnMoney')}">退费办理</a></b>
+                   </div>
+
+                   <div class="block">
+                       <a href="{:U('admin/charge/countAnalyse')}"><img src="__IMG__/analysis.png" ></a>
+                       <b class="b"><a href="{:U('admin/charge/countAnalyse')}">统计分析</a></b>
+                   </div>
+
+                   <div class="block">
+                       <a href="{:U('admin/charge/reduceApply')}"><img src="__IMG__/applyReduce.png" ></a>
+                       <b class="b"><a href="{:U('admin/charge/reduceApply')}">减免费申请</a></b>
+                   </div>
+
+                   <div class="block">
+                       <a href="{:U('admin/charge/examineReduce')}"><img src="__IMG__/examine.png" ></a>
+                       <b class="b"><a href="{:U('admin/charge/examineReduce')}">减免费审核</a></b>
+                   </div>
+
+               </div>
+            </div>
+        </div>
+    </div>
+
+</block>
+<block name="script">
+    <script type="text/javascript" src="__JS__/hongQiRegister.js"></script>
+    <script type="text/javascript" src="__JS__/birthday.js"></script>
+    <script type="text/javascript">
+        $(function(){
+
+        })
+    </script>
+</block>
+<block name="style"><style>/* 资料管理-银行帐户 */
+
+.indexIndex{width: 1000px;height: 400px;}
+.indexIndex .block{width: 198px;height: 200px;float: left;text-align: center; }
+/*border: 1px solid indianred;background-color: #ff0000;*/
+.indexIndex .block img{margin-top: 20px;width: 50px;}
+.indexIndex .block .b{display: block; margin-top: 10px}
+
+
+
+.certfBank{ width: 790px; margin-left: 80px; margin-top: 0px; overflow: hidden; margin-bottom: 100px;}
+.CBcon{ margin-bottom: 30px;}
+.CBcon i{ width: 3px; height: 15px; background: #2e97de; display: inline-block; vertical-align: middle;}
+.CBcon span{ width: 75px; margin-left: 15px; font-size: 16px; color: #444; display: inline-block; vertical-align: middle;}
+.CBcon input{ width: 200px; height: 35px; border: 1px solid #2e97de; border-radius: 4px; text-indent: 1em; vertical-align: middle; line-height: 35px;}
+</style></block>

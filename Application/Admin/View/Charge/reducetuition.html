@@ -1,0 +1,196 @@
+<extend name="Public/base"/>
+
+<block name="style">
+    <link rel="stylesheet" href="__CSS__/BeatPicker.min.css"/>
+    <link rel="stylesheet" href="__CSS__/hongqi.css"/>
+    <script src="__JS__/BeatPicker.min.js"></script>
+    <script src="__JS__/birthday.js"></script>
+    <script src="__JS__/hongQi.js"></script>
+    <script type="text/javascript" src="__JS__/changeDate.js"></script>
+    <style type="text/css">
+        .auditingFrame .table input{width: 70px}
+        .auditingFrame .table select{width: 70px}
+    </style>
+</block>
+
+<block name="body">
+    <div class="platCon">
+        <div class="platState white">
+            <div class="platTitle"><h2>减免费办理</h2><a href="{:U('admin/student/indexindex')}"><img src="__IMG__/return.png" style="margin-left: 200px"></a></div>
+            <i class="refresh" onclick="javascript:location.reload(true);" title="刷新当前页面"></i>
+            <div class="recordCou">
+                <div style="display: inline-block;width: 50px;margin-left: 3px;">
+                    <img src="__IMG__/studentSave.png">
+                    <input type="button" class="excesssave" value="保存" onclick="saveReduceTuition()">
+                </div>
+                <!--批量减免操作-->
+                <notempty name="charge_standard_name">
+                    <h2 style="margin-left: 20px">{$charge_standard_name}</h2>
+                    <div style="margin-left: 20px;margin-top: 20px;font-size: 15px;">
+                    <label for="1">成绩批量减免</label><input type="radio" name="reduceTuition" value="score" id="1">
+                    <label for="2" style="margin-left: 10px;">少数名族批量减免</label><input type="radio" name="reduceTuition" value="nation" id="2">
+                    <label for="3" style="margin-left: 10px;">教师子女批量减免</label><input type="radio" name="reduceTuition" id="3">
+                    <label for="4" style="margin-left: 10px;">手动减免</label><input type="radio" name="reduceTuition" id="4">
+                    </div>
+                    <form id="form1" method="post">
+                        <input type="hidden" value="{$charge_standard_name}" name="charge_standard_name">
+                        <table class="table" style="margin-top: 20px;display: none" id="table1" >
+                            <thead>
+                            <th id="th">成绩批量减免</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><input name="reduce_money_batch" id="reduce_money_batch"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="table" style="margin-top: 20px;display: none" id="table2">
+                            <thead>
+                            <th width="30%">减免类型</th>
+                            <th width="30%">学号</th>
+                            <th width="30%">金额</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <select name="type">
+                                        <option value="成绩">成绩</option>
+                                        <option value="少数名族">少数名族</option>
+                                        <option value="教师子女">教师子女</option>
+                                    </select>
+                                </td>
+                                <td><input name="student_id1" id="student_id1" type="text" value=""></td>
+                                <td><input name="reduce_money_hand" type="text"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="selectList" style="margin-top: 20px;display: none" id="selectList">
+                            {$charge_standard_name}<input type="hidden" name="charge_standard_name" value="{$charge_standard_name}" id="charge_standard_name">
+                            年级<select name="student_grade" class="grade" id="student_grade"></select>
+                            班级<select name="student_class" class="class" id="student_class"></select>
+                            <input type="text" name="student_id" placeholder="学号,姓名" id="student_id"><b></b>
+                            <input  class="excesssave" value="搜索" onclick="getStudentInformation()"></li>
+
+                        </div>
+
+                        <table class="table" id="tableid">
+                        </table>
+                    </form>
+                </notempty>
+                <!--展示收费标准列表-->
+                <notempty name="result_charge_standard">
+                    <table class="table" id="chargeList">
+                        <thead>
+                        <th>收费项目</th>
+                        <th>创建人</th>
+                        </thead>
+                        <tbody>
+                        <volist name="result_charge_standard" id="item">
+                            <tr>
+                                <td><a href="{:U('admin/charge/reduceTuition',array('charge_standard_name'=>$item['charge_standard_name']))}">{$item['charge_standard_name']}</a></td>
+                                <td>{$item['teacher_name']}</td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </notempty>
+
+            </div>
+        </div>
+    </div>
+
+</block>
+
+<block name="script">
+    <script><if condition="($Think.request.status neq '') OR ($Think.request.s_time neq '') OR ($Think.request.e_time neq '') ">toggel("reSearchM");<else />toggel("RCsearch");</if></script>
+    <script type="text/javascript">
+        function saveReduceTuition(){
+            $("#form1").submit()
+        }
+
+        function getStudentInformation(){
+            $("#student_charge_task").hide()
+            $("#tableid  tr").html("");
+            var charge_standard_name= $("#charge_standard_name").val()
+            var data = {'student_grade':$("#student_grade").val(),'student_class':$("#student_class").val(),'student_id':$("#student_id").val()}
+            var url ="/admin/" + "student-getstudentinformation.html"
+            $.getJSON(url,data,function(response){
+                var Thead = $("<thead><th>学号</th><th>姓名</th><th>民族</th><th>性别</th>" +
+                "<th>出生年月</th><th>家庭住址</th><th>年级</th><th>班级</th></thead>")
+                Thead.appendTo($("#tableid"))
+                var Tbody = $("<tbody></tbody>")
+                Tbody.appendTo($("#tableid"))
+                for(student in response){
+                    var Tr = $("<tr><td><a class='student_id' style='cursor: pointer'>"+response[student].student_id+"</a></td><td>"+response[student].student_name + "</td><td>"+response[student].student_nation +"</td><td>"+response[student].student_sex +"</td><td>" +response[student].student_birthdate + "</td><td>" +response[student].student_address + "</td><td>" +response[student].student_grade + "</td><td>" +response[student].student_class +"</td></tr>")
+                    Tr.appendTo(Tbody)
+                }
+
+                $('.student_id').click(function(){
+                    var value = $('#student_id1').val()
+                    console.log(value);
+
+                    var i = $(this).css('color');
+                    var o = i.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+                    delete (o[0]);
+                    for (var n = 1; n <= 3; ++n) {
+                        o[n] = parseInt(o[n]).toString(16);
+                        if (o[n].length == 1) o[n] = '0' + o[n];
+                    }
+                    var s = o.join('');
+                    if(s == 'ff0000'){
+                        $(this).css('color','#2e97de')
+                    }else{
+                        $(this).css('color','red')
+                    }
+
+                    if(value==''){
+                        value = $(this).text()
+                    }else{
+                        ss=value.split(",")
+                        index=$.inArray($(this).text(),ss)
+                        if(index==-1){
+                            value = value + ',' + $(this).text()
+                        }else{
+                            ss.splice(index,1);
+                            value=ss.join(",")
+                        }
+                    }
+                    $('#student_id1').val(value)
+                })
+            })
+        }
+
+        $(function(){
+            $("#1").click(function(){
+                $("#table1").show()
+                $("#table2").hide()
+                $("#th")[0].innerHTML = "成绩批量减免"
+            })
+
+            $("#2").click(function(){
+                $("#table1").show()
+                $("#table2").hide()
+                $("#th")[0].innerHTML = "少数名族批量减免"
+                $("#form1").prop('action',"{:U('admin/charge/reduceTuitionNation')}")
+            })
+
+            $("#3").click(function(){
+                $("#table1").show()
+                $("#table2").hide()
+                $("#th")[0].innerHTML = "教师子女批量减免"
+                $("#form1").prop('action',"{:U('admin/charge/reduceTuitionTeacher')}")
+            })
+
+            $("#4").click(function(){
+                $("#table2").show()
+                $("#selectList").show()
+                $("#table1").hide()
+                $("#form1").prop('action',"{:U('admin/charge/reduceTuitionHand')}")
+            })
+        })
+    </script>
+</block>
+
+

@@ -125,3 +125,81 @@ function changePhotoName(&$info,$user_id){
     !empty($company_licence) && $renameResult[]=rename($company_licence,$new_licence);
      return in_array(false, $renameResult)==true?false:true;
 }
+
+//对减免学费申请照片重命名
+function changePhotoNameReduceApply(&$info,$user_id){
+    $route='./Uploads/'.$info['student_id_card_photo']['savepath'];//更换环境需要更改
+    $ext_student_id_card_photo=$info['student_id_card_photo']['ext'];//户口本
+    $ext_student_handicap_photo = $info['student_handicap_photo']['ext'];//低保证明
+
+    $student_id_card_photo=$route.$info['student_id_card_photo']['savename'];
+    $student_handicap_photo = $route.$info['student_handicap_photo']['savename'];
+
+    $info['student_id_card_photo']['savename']=$user_id.'student_id_card_photo'.'.'.$ext_student_id_card_photo;
+    $info['student_handicap_photo']['savename']=$user_id.'student_handicap_photo'.'.'.$ext_student_handicap_photo;
+
+    $new_student_id_card_photo=$route.$user_id.'student_id_card_photo'.'.'.$ext_student_id_card_photo;
+    $new_student_handicap_photo=$route.$user_id.'student_handicap_photo'.'.'.$ext_student_handicap_photo;
+
+    !empty($student_id_card_photo) && $renameResult[]=rename($student_id_card_photo,$new_student_id_card_photo);
+    !empty($student_handicap_photo) && $renameResult[]=rename($student_handicap_photo,$new_student_handicap_photo);
+    return in_array(false, $renameResult)==true?false:true;
+}
+function input_csv($handle) {
+    $out = array ();
+    $n = 0;
+    while ($data = fgetcsv($handle)) {
+        $data = eval('return '.iconv('gbk','utf-8',var_export($data,true)).';');
+        $num = count($data);
+        for ($i = 0; $i < $num; $i++) {
+            $out[$n][$i] = $data[$i];
+        }
+        $n++;
+    }
+    return $out;
+}
+
+function formatClassTest($str){
+    switch($str){
+        case '是':
+            return '实验班';
+        case '否':
+            return '正常班';
+    }
+}
+
+function formatReceiveItem($item){
+    if(array_key_exists('student_tuition',$item)){
+        return "学费";
+    }
+    if(array_key_exists('student_data',$item)){
+        return "资料费";
+    }
+    if(array_key_exists('student_insurance',$item)){
+        return "保险费";
+    }
+    if(array_key_exists('student_meal',$item)){
+        return "包餐费";
+    }
+    if(array_key_exists('student_accommodation',$item)){
+        return "住宿费";
+    }
+}
+
+function getReceiveItem($item){
+    if(array_key_exists('student_tuition',$item)){
+        return $item['student_tuition'];
+    }
+    if(array_key_exists('student_data',$item)){
+        return $item['student_data'];
+    }
+    if(array_key_exists('student_insurance',$item)){
+        return $item['student_insurance'];
+    }
+    if(array_key_exists('student_meal',$item)){
+        return $item['student_meal'];
+    }
+    if(array_key_exists('student_accommodation',$item)){
+        return $item['student_accommodation'];
+    }
+}

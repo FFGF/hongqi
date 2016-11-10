@@ -20,7 +20,7 @@ class IndexController extends ChannelsController {
             }
             else{
                 session('admin', $admin);
-                redirect(__ROOT__.'/Admin/charge');
+                redirect(__ROOT__.'/Admin/finance');
             }
         }
     }

@@ -1,0 +1,181 @@
+<extend name="Public/base"/>
+
+<block name="style">
+    <link rel="stylesheet" href="__CSS__/BeatPicker.min.css"/>
+    <script src="__JS__/BeatPicker.min.js"></script>
+    <script src="__JS__/birthday.js"></script>
+    <script type="text/javascript" src="__JS__/changeDate.js"></script>
+    <style type="text/css">
+        .auditingFrame .table input{width: 70px}
+        .auditingFrame .table select{width: 70px}
+
+        }
+    </style>
+</block>
+
+<block name="body">
+    <div class="platCon">
+        <div class="platState white">
+            <div class="platTitle"><h2>减免审核</h2><a href="{:U('admin/student/indexindex')}"><img src="__IMG__/return.png" style="margin-left: 200px"></a></div>
+            <i class="refresh" onclick="javascript:location.reload(true);" title="刷新当前页面"></i>
+            <div class="recordCou">
+
+                <notempty name="charge_standard_name">
+                    <h2 style="margin-left: 20px">{$charge_standard_name}</h2>
+                    <form id="examineReduce" method="post">
+                        <input type="hidden" name="charge_standard_name" value="{$charge_standard_name}">
+                        <input type="button" class="excesssave" value="财务人员审核" style="width: 150px;margin-left: 20px" id="financeExamine">
+                        <input type="button" class="excesssave" value="校长审核" style="width: 150px" id="schoolmasterExamine">
+                        <input type="button" class="excesssave" value="董事长审核" style="width: 150px" id="chairmanExamine">
+                    </form>
+                    <notempty name="result_reduce_apply">
+                        <table class="table">
+                            <thead>
+                            <th>学号</th>
+                            <th>收费项目</th>
+                            <th>减免金额</th>
+                            <th>描述</th>
+                            <th>财务人员</th>
+                            <th>校长</th>
+                            <th>董事长</th>
+                            <th>不通过原因</th>
+                            </thead>
+                            <tbody>
+                            <volist name="result_reduce_apply" id="item">
+                                <tr>
+                                    <td>{$item['student_id']}</td>
+                                    <td>{$item['charge_standard_name']}</td>
+                                    <td>{$item['reduce_money']}</td>
+                                    <td class="content" title="{$item['text_description']}">{$item['text_description']}</td>
+                                    <td>{$item['examine_finance']}</td>
+                                    <td>{$item['examine_schoolmaster']}</td>
+                                    <td>{$item['examine_chairman']}</td>
+                                    <td class="content" title="{$item['fail_reason']}">{$item['fail_reason']}</td>
+                                </tr>
+                            </volist>
+                            </tbody>
+                        </table>
+                    </notempty>
+
+                </notempty>
+                <!--财务审核列表-->
+                <notempty name="result_examine_finance">
+                    <table class="table">
+                        <thead>
+                        <th>学号</th>
+                        <th>申请减免金额</th>
+                        <th>困难描述</th>
+                        <th>审核状态</th>
+                        </thead>
+                        <tbody>
+                        <volist name="result_examine_finance" id="item">
+                            <tr>
+                                <td><a href="{:U('admin/Charge/examineStudent',array('reduce_apply_id'=>$item['id'],'flag'=>'finance'))}">{$item['student_id']}</a></td>
+                                <td>{$item['reduce_money']}</td>
+                                <td>{$item['text_description']}</td>
+                                <td>{$item['examine_finance']}</td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </notempty>
+                <!--校长审核列表-->
+                <notempty name="result_examine_schoolmaster">
+                    <table class="table">
+                        <thead>
+                        <th>学号</th>
+                        <th>申请减免金额</th>
+                        <th>困难描述</th>
+                        <th>审核状态</th>
+                        </thead>
+                        <tbody>
+                        <volist name="result_examine_schoolmaster" id="item">
+                            <tr>
+                                <td><a href="{:U('admin/Charge/examineStudent',array('reduce_apply_id'=>$item['id'],'flag'=>'schoolmaster'))}">{$item['student_id']}</a></td>
+                                <td>{$item['reduce_money']}</td>
+                                <td>{$item['text_description']}</td>
+                                <td>{$item['examine_schoolmaster']}</td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </notempty>
+                <!--董事长审核列表-->
+                <notempty name="result_examine_chairman">
+                    <table class="table">
+                        <thead>
+                        <th>学号</th>
+                        <th>申请减免金额</th>
+                        <th>困难描述</th>
+                        <th>审核状态</th>
+                        </thead>
+                        <tbody>
+                        <volist name="result_examine_chairman" id="item">
+                            <tr>
+                                <td><a href="{:U('admin/Charge/examineStudent',array('reduce_apply_id'=>$item['id'],'flag'=>'chairman'))}">{$item['student_id']}</a></td>
+                                <td>{$item['reduce_money']}</td>
+                                <td>{$item['text_description']}</td>
+                                <td>{$item['examine_chairman']}</td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </notempty>
+
+                <!--展示收费标准列表-->
+                <notempty name="result_charge_standard">
+                    <table class="table" id="chargeList">
+                        <thead>
+                        <th>收费项目</th>
+                        <th>创建人</th>
+                        </thead>
+                        <tbody>
+                        <volist name="result_charge_standard" id="item">
+                            <tr>
+                                <td><a href="{:U('admin/charge/examineReduce',array('charge_standard_name'=>$item['charge_standard_name']))}">{$item['charge_standard_name']}</a></td>
+                                <td>{$item['teacher_name']}</td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </notempty>
+            </div>
+        </div>
+    </div>
+
+</block>
+
+<block name="script">
+    <script><if condition="($Think.request.status neq '') OR ($Think.request.s_time neq '') OR ($Think.request.e_time neq '') ">toggel("reSearchM");<else />toggel("RCsearch");</if></script>
+    <script type="text/javascript">
+
+        $(function(){
+            $(".content").each(function(){
+                var maxwidth=10;
+                if($(this).text().length>maxwidth){
+                    $(this).text($(this).text().substring(0,maxwidth));
+                    $(this).html($(this).html()+'…');
+                }
+
+            });
+
+            $("#financeExamine").click(function(){
+                $("#examineReduce").prop('action',"{:U('admin/charge/getExamineFinance')}");
+                $("#examineReduce").submit()
+            })
+
+            $("#schoolmasterExamine").click(function(){
+                $("#examineReduce").prop('action',"{:U('admin/charge/getExamineSchoolmaster')}");
+                $("#examineReduce").submit()
+            })
+
+            $("#chairmanExamine").click(function(){
+                $("#examineReduce").prop('action',"{:U('admin/charge/getExamineChairman')}");
+                $("#examineReduce").submit()
+            })
+
+        })
+    </script>
+</block>
+
+

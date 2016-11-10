@@ -1,0 +1,133 @@
+<extend name="Public/base"/>
+
+<block name="style">
+    <link rel="stylesheet" href="__CSS__/BeatPicker.min.css"/>
+    <script src="__JS__/BeatPicker.min.js"></script>
+    <script src="__JS__/birthday.js"></script>
+    <script type="text/javascript" src="__JS__/changeDate.js"></script>
+    <style type="text/css">
+        .auditingFrame .table input{width: 70px}
+        .auditingFrame .table select{width: 70px}
+    </style>
+</block>
+
+<block name="body">
+    <div class="platCon">
+        <div class="platState white">
+            <div class="platTitle"><h2>收费项目</h2></div>
+            <i class="refresh" onclick="javascript:location.reload(true);" title="刷新当前页面"></i>
+            <div class="recordCou">
+                <div style="display: inline-block;width: 50px;margin-left: 30px;">
+                    <img src="__IMG__/studentAdd.png">
+                    <input type="button" class="excesssave" value="新增" onclick="addChargeItem()">
+                </div>
+
+                <div style="display: inline-block;width: 50px;margin-left: 3px;">
+                    <img src="__IMG__/studentSave.png">
+                    <input type="button" class="excesssave" value="保存" onclick="saveChargeItem()">
+                </div>
+                &nbsp; &nbsp; &nbsp;
+
+                <div style="display: inline-block;width: 50px">
+                    <form action="{:U('admin/charge/querychargeitem')}" method="post">
+                    <img src="__IMG__/studentQuery.png">
+                    <input type="submit" class="excesssave" value="查询">
+                    </form>
+                </div>
+
+                <div style="display: inline-block;width: 50px">
+                    <img src="__IMG__/studentDelete.png">
+                    <input type="submit" class="excesssave" value="删除" onclick="deleteChargeItem()">
+                </div>
+
+
+                <form id="formAdd" action="{:U('admin/charge/chargeitem')}" method="post" style="display: none" onsubmit="return checkAddChargeItem()">
+                    <table class="table" style="margin-top: 20px;width: 50%">
+                        <tr>
+                            <td>请输入收费项目名称</td>
+                            <td><input name="charge_item_name" id="charge_item_name" type="text"></td>
+                        </tr>
+                    </table>
+                </form>
+
+                <notempty name="result_charge_item">
+                    <form id="updateChargeItem">
+                        <table class="table" style="margin-top: 20px;width: 50%">
+                            <thead>
+                            <th><input type="checkbox" id="all"></th>
+                            <th>收费项目名称</th>
+                            </thead>
+                            <tbody>
+                            <volist name="result_charge_item" id="item">
+                                <tr>
+                                    <td><input type="checkbox" name="choice" value="{$item.id}"></td>
+                                    <td>{$item['charge_item_name']}</td>
+                                </tr>
+                            </volist>
+                            </tbody>
+                        </table>
+                    </form>
+                </notempty>
+
+
+            </div>
+        </div>
+    </div>
+
+</block>
+
+<block name="script">
+    <script><if condition="($Think.request.status neq '') OR ($Think.request.s_time neq '') OR ($Think.request.e_time neq '') ">toggel("reSearchM");<else />toggel("RCsearch");</if></script>
+    <script type="text/javascript">
+        //新增按钮
+        function addChargeItem(){
+            $("#updateChargeItem").hide()
+            $("#formAdd").show()
+        }
+        //保存按钮
+        function saveChargeItem(){
+            $("#formAdd").submit()
+        }
+        function checkAddChargeItem(){
+            if($("#charge_item_name").val()){
+                return true
+            }else{
+                alert("请输入收费项目名称")
+                return false
+            }
+        }
+        //删除按钮
+        function deleteChargeItem(){
+            var choice_value = []
+            $('input[name="choice"]:checked').each(function(){
+                choice_value.push($(this).val())
+            })
+
+            var data = {'chargeItem_id_array':choice_value}
+            var  url = "/admin/" + "charge-deletechargeitem.html"
+            $.getJSON(url,data,function(response){
+                if(response.code==1){
+                    alert('删除成功')
+                    $(".info_bg").hide();
+                    $(".auditingFrame").hide();
+                    window.location.reload()//刷新当前页面.
+                }else{
+                    alert('删除失败');
+                }
+            })
+        }
+
+        $(function(){
+            $("#all").click(function(){
+                if(this.checked){
+                    $("#updateChargeItem :checkbox").prop("checked", true);
+                }else{
+                    $("#updateChargeItem :checkbox").removeProp("checked", false);
+                }
+            });
+        })
+
+    </script>
+</block>
+
+

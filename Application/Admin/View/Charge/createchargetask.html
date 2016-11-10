@@ -1,0 +1,302 @@
+<extend name="Public/base"/>
+
+<block name="style">
+    <link rel="stylesheet" href="__CSS__/BeatPicker.min.css"/>
+    <script src="__JS__/BeatPicker.min.js"></script>
+    <script src="__JS__/birthday.js"></script>
+    <script type="text/javascript" src="__JS__/changeDate.js"></script>
+    <style type="text/css">
+        .auditingFrame .table input{width: 70px}
+        .auditingFrame .table select{width: 70px}
+    </style>
+</block>
+
+<block name="body">
+    <div class="platCon">
+        <div class="platState white">
+            <div class="platTitle"><h2>新建任务</h2><a href="{:U('admin/student/indexindex')}"><img src="__IMG__/return.png" style="margin-left: 200px"></a></div>
+            <i class="refresh" onclick="javascript:location.reload(true);" title="刷新当前页面"></i>
+            <div class="recordCou">
+                <div style="display: inline-block;width: 50px;margin-left: 30px;">
+                    <img src="__IMG__/studentAdd.png">
+                    <input type="button" class="excesssave" value="新增" onclick="addChargeTask()">
+                </div>
+
+                <div style="display: inline-block;width: 50px;margin-left: 3px;">
+                    <img src="__IMG__/studentSave.png">
+                    <input type="button" class="excesssave" value="保存" onclick="saveChargeTask()">
+                </div>
+                &nbsp; &nbsp; &nbsp;
+                <div style="display: inline-block;width: 50px">
+                    <img src="__IMG__/studentDelete.png">
+                    <input type="submit" class="excesssave" value="删除" onclick="deleteChargeStandard()">
+                </div>
+                &nbsp; &nbsp; &nbsp;
+
+                <div style="display: inline-block;width: 50px">
+                    <img src="__IMG__/studentExport.png">
+                    <form action="{:U('admin/student/exportStudent')}" style="display: inline-block;" method="post" id="student_export">
+                        <input type="hidden" id="student_id_array" name="student_id_array">
+                        <input type="button" class="excesssave" value="导出" onclick="exported()">
+                    </form>
+                </div>
+
+                <!--展示收费标准列表-->
+                <notempty name="result_charge_standard">
+                    <table class="table">
+                        <thead>
+                            <th><input type="checkbox" id="all"></th>
+                            <th>收费项目</th>
+                            <th>创建人</th>
+                        </thead>
+                        <tbody>
+                            <volist name="result_charge_standard" id="item">
+                                <tr>
+                                    <td><input type="checkbox" name="choice_item" value="{$item.charge_standard_name}"></td>
+                                    <td><a href="{:U('admin/charge/getChargeStandard',array('charge_standard_name'=>$item['charge_standard_name']))}">{$item['charge_standard_name']}</a></td>
+                                    <td>{$item['teacher_name']}</td>
+                                </tr>
+                            </volist>
+                        </tbody>
+                    </table>
+                </notempty>
+                <!--展示某一次的收费标准-->
+                <notempty name="result_charge_standard_some">
+                    <table class="table">
+                        <thead>
+                        <th>收费项目</th>
+                        <th>年级</th>
+                        <th>班级类别</th>
+                        <if condition="!is_null($result_charge_standard_some[0]['student_tuition'])">
+                            <th>学费</th>
+                        </if>
+                        <if condition="!is_null($result_charge_standard_some[0]['student_accommodation'])">
+                            <th>住宿费</th>
+                        </if>
+                        <if condition="!is_null($result_charge_standard_some[0]['student_data'])">
+                            <th>资料费</th>
+                        </if> <if condition="!is_null($result_charge_standard_some[0]['student_meal'])">
+                            <th>包餐费</th>
+                        </if>
+                        <if condition="!is_null($result_charge_standard_some[0]['student_insurance'])">
+                            <th>保险费</th>
+                        </if>
+                        </thead>
+                        <tbody>
+                        <volist name="result_charge_standard_some" id="item">
+                            <tr>
+                                <td>{$item['charge_standard_name']}</td>
+                                <td>{$item['student_grade']}</td>
+                                <td>{$item['student_test']|formatClassTest}</td>
+
+                                <if condition="!is_null($item['student_tuition'])">
+                                    <td>{$item['student_tuition']}</td>
+                                </if>
+
+                                <if condition="!is_null($item['student_accommodation'])">
+                                    <td>{$item['student_accommodation']}</td>
+                                </if>
+
+                                <if condition="!is_null($item['student_data'])">
+                                    <td>{$item['student_data']}</td>
+                                </if>
+
+                                <if condition="!is_null($item['student_meal'])">
+                                    <td>{$item['student_meal']}</td>
+                                </if>
+
+                                <if condition="!is_null($item['student_insurance'])">
+                                    <td>{$item['student_insurance']}</td>
+                                </if>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </notempty>
+
+                <!--设定收费标准-->
+                <notempty name="charge_item">
+                    <form action="{:U('admin/charge/saveChargeStandard')}" method="post" id="chargeStand">
+                        <table class="table">
+                            <thead>
+                            <th>收费项目</th>
+                            <th>年级</th>
+                            <th>班级类别</th>
+                            <if condition="in_array('student_tuition',$charge_item['choice'])">
+                                <th>学费</th>
+                            </if>
+                            <if condition="in_array('student_accommodation',$charge_item['choice'])">
+                                <th>住宿费</th>
+                            </if>
+                            <if condition="in_array('student_data',$charge_item['choice'])">
+                                <th>资料费</th>
+                            </if>
+                            <if condition="in_array('student_meal',$charge_item['choice'])">
+                                <th>包餐费</th>
+                            </if>
+                            <if condition="in_array('student_insurance',$charge_item['choice'])">
+                                <th>保险费</th>
+                            </if>
+                            </thead>
+                            <tbody>
+                            <volist name="gradeTest" id="item">
+                                <tr>
+                                    <td>{$charge_item['charge_name']}</td>
+                                    <input name="charge_standard_name{$item['id']}" type="hidden" value="{$charge_item['charge_name']}"/>
+                                    <td>{$item['grade']}</td>
+                                    <input name="student_grade{$item['id']}" type="hidden" value="{$item['grade']}"/>
+                                    <td>{$item['class_test']|formatClassTest}</td>
+                                    <input name="student_test{$item['id']}" type="hidden" value="{$item['class_test']}"/>
+
+                                    <if condition="in_array('student_tuition',$charge_item['choice'])">
+                                        <td><input style="width: 50px;" name="student_tuition{$item['id']}"></td>
+                                    </if>
+                                    <if condition="in_array('student_accommodation',$charge_item['choice'])">
+                                        <td><input style="width: 50px;"  name="student_accommodation{$item['id']}"></td>
+                                    </if>
+                                    <if condition="in_array('student_data',$charge_item['choice'])">
+                                        <td><input style="width: 50px;"  name="student_data{$item['id']}"></td>
+                                    </if>
+                                    <if condition="in_array('student_meal',$charge_item['choice'])">
+                                        <td><input style="width: 50px;"  name="student_meal{$item['id']}"></td>
+                                    </if>
+                                    <if condition="in_array('student_insurance',$charge_item['choice'])">
+                                        <td><input style="width: 50px;"  name="student_insurance{$item['id']}"></td>
+                                    </if>
+                                </tr>
+                            </volist>
+                            </tbody>
+                        </table>
+                    </form>
+                </notempty>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="auditingFrame">
+        <div class="aFtitle">选择收费项目</div>
+        <div class="aFcona">
+            <form action="{:U('admin/charge/createchargetask')}" method="post" onsubmit="return checkChargeTask()">
+                <table class="table" cellspacing="0" cellpadding="0" style="width: 100%;padding-top: 10px">
+                    <thead>
+                        <th width="30%">收费名称</th>
+                        <th width="70%" class="lan">收费项目</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input name="charge_name" style="width: 150px" id="charge_name"></td>
+                            <td>
+                                <label for="1">学费</label><input type="checkbox" name="choice[]" value="student_tuition" id="1" style="width: 40px;margin-left: -10px;">
+                                <label for="2">住宿费</label><input type="checkbox" name="choice[]" value="student_accommodation" id="2" style="width: 40px;margin-left: -10px;">
+                                <label for="3">资料费</label><input type="checkbox" name="choice[]" value="student_data" id="3" style="width: 40px;margin-left: -10px;">
+                                <label for="4">保险费</label><input type="checkbox" name="choice[]" value="student_insurance" id="4" style="width: 40px;margin-left: -10px;">
+                                <label for="5">包餐费</label><input type="checkbox" name="choice[]" value="student_meal" id="5" style="width: 40px;margin-left: -10px;">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input  type="submit"  value="新建" class="adopt" style="margin-left: 280px">
+            </form>
+        </div>
+        <i class="info_close"></i>
+    </div>
+    <div class="info_bg"></div>
+</block>
+
+<block name="script">
+    <script><if condition="($Think.request.status neq '') OR ($Think.request.s_time neq '') OR ($Think.request.e_time neq '') ">toggel("reSearchM");<else />toggel("RCsearch");</if></script>
+    <script type="text/javascript">
+        //新增按钮
+        function addChargeTask(){
+            $(".info_bg").show();
+            $(".auditingFrame").show();
+            $(".auditingFrame").css({
+                top: function(index, value) {
+                    return $(window).scrollTop() + ($(window).height()/2);
+                }
+            });
+        }
+        function checkChargeTask(){
+            if($("#charge_name").val()){
+                if(!$("#1").is(':checked')&&!$("#2").is(':checked')&&!$("#3").is(':checked')&&!$("#4").is(':checked')&&!$("#5").is(':checked')){
+                    alert("请至少选择一种收费项目")
+                    return false
+                }else{
+                    return true
+                }
+            }else{
+                alert("请输入收费项目名称")
+                return false
+            }
+
+        }
+        //保存按钮
+        function saveChargeTask(){
+            $("#chargeStand").submit()
+        }
+        //关闭按钮
+        $(".info_close").click(function(){
+            $(".info_bg").hide();
+            $(".auditingFrame").hide();
+        })
+        //查询按钮
+        function query() {
+            $(".info_bg").show();
+            $(".auditingFrame").show();
+            $(".auditingFrame").css({
+                top: function(index, value) {
+                    return $(window).scrollTop() + ($(window).height()/2);
+                }
+            });
+        }
+
+        //删除按钮
+        function deleteChargeStandard(){
+            var choice_value = []
+            $('input[name="choice_item"]:checked').each(function(){
+                choice_value.push($(this).val())
+            })
+
+            var data = {'charge_standard_name_array':choice_value}
+            var  url = "/admin/" + "charge-deletechargetask.html"
+            $.getJSON(url,data,function(response){
+                if(response.code==1){
+                    alert('删除成功')
+                    $(".info_bg").hide();
+                    $(".auditingFrame").hide();
+                    window.location.reload()//刷新当前页面.
+                }else{
+                    alert('删除失败');
+                }
+            })
+        }
+        //导出按钮
+        function exported(){
+            var choice_value = []
+            $('input[name="choice"]:checked').each(function(){
+                choice_value.push($(this).val())
+            })
+            $("#student_id_array").val(choice_value)
+            $("#student_export").submit()
+        }
+
+
+        $(function(){
+
+            $("#all").click(function(){
+                if(this.checked){
+                    $("input[name='choice_item']").prop("checked", true);
+                }else{
+                    $("input[name='choice_item']").prop("checked", false);
+                }
+            });
+
+        })
+    </script>
+</block>
+
+

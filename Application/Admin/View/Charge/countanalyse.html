@@ -1,0 +1,149 @@
+<extend name="Public/base"/>
+
+<block name="style">
+    <link rel="stylesheet" href="__CSS__/BeatPicker.min.css"/>
+    <link rel="stylesheet" href="__CSS__/hongqi.css"/>
+    <script src="__JS__/BeatPicker.min.js"></script>
+    <script src="__JS__/birthday.js"></script>
+    <script src="__JS__/hongQi.js"></script>
+    <script type="text/javascript" src="__JS__/changeDate.js"></script>
+    <style type="text/css">
+        .auditingFrame .table input{width: 70px}
+        .auditingFrame .table select{width: 70px}
+    </style>
+</block>
+
+<block name="body">
+    <div class="platCon">
+        <div class="platState white">
+            <div class="platTitle"><h2>统计分析</h2><a href="{:U('admin/student/indexindex')}"><img src="__IMG__/return.png" style="margin-left: 200px"></a></div>
+            <i class="refresh" onclick="javascript:location.reload(true);" title="刷新当前页面"></i>
+            <div class="recordCou">
+                <!--统计分析窗口-->
+                <notempty name="charge_standard_name">
+                    <form action="{:U('admin/charge/countAnalyseQuery')}" method="post">
+
+                        <input type="hide" name="s_time" style="width:0px;"><input type="hide" name="e_time" style="width:0px;">
+                        <div class="changeDate" style="margin-left: 200px;margin-bottom: 10px;">
+                            <div class="input-parent input-container"><input type="text" id="s_time" data-beatpicker="true" data-beatpicker-module="clear" placeholder="收费开始时间" class="beatpicker-input beatpicker-inputnode" readonly="readonly" data-beatpicker-id="beatpicker-0"></div>
+                            <div class="input-parent input-container"><input type="text" id="e_time" data-beatpicker="true" data-beatpicker-module="clear" placeholder="收费结束时间" class="beatpicker-input beatpicker-inputnode" readonly="readonly" data-beatpicker-id="beatpicker-1"></div>
+                        </div>
+
+
+                        <h2>{$charge_standard_name}</h2>
+                        <input type="hidden" value="{$charge_standard_name}" name="charge_standard_name">
+                        <div class="selectList">
+                            年级<select name="student_grade" class="grade"></select>
+                            班级<select name="student_class" class="class"></select>
+                            类型<select name="type">
+                                    <option value="--">--</option>
+                                    <option value="收费">收费</option>
+                                    <option value="减免">减免</option>
+                                    <option value="退费">退费</option>
+                                </select>
+                            <input type="text" name="student_id" placeholder="学号">
+                            <input type="submit" value="查询" onclick="javascript:format_changeDate('s_time','e_time');" style="background-color: #1a9aec;cursor: pointer;border-radius: 5px;">
+                        </div>
+                    </form>
+                    <notempty name="resultCountAnalyseQuery">
+                        <table class="table" style="margin-top: 20px">
+                            <thead>
+                                <th>学号</th>
+                                <th>类型</th>
+                                <if condition="!is_null($sum_receive_item[0]['sum_student_tuition'])">
+                                    <th>学费</th>
+                                </if>
+                                <if condition="!is_null($sum_receive_item[0]['sum_student_data'])">
+                                    <th>资料费</th>
+                                </if>
+                                <if condition="!is_null($sum_receive_item[0]['sum_student_accommodation'])">
+                                    <th>住宿费</th>
+                                </if>
+                                <if condition="!is_null($sum_receive_item[0]['sum_student_meal'])">
+                                    <th>包餐费</th>
+                                </if>
+                                <if condition="!is_null($sum_receive_item[0]['sum_student_insurance'])">
+                                    <th>保险费</th>
+                                </if>
+                            </thead>
+                                <tr style="font-size: 17px">
+                                    <td style="background: blue" colspan="2">总和</td>
+                                    <if condition="!is_null($sum_receive_item[0]['sum_student_tuition'])">
+                                        <td style="background: blue">{$sum_receive_item[0]['sum_student_tuition']}</td>
+                                    </if>
+                                    <if condition="!is_null($sum_receive_item[0]['sum_student_data'])">
+                                        <td style="background: blue">{$sum_receive_item[0]['sum_student_data']}</td>
+                                    </if>
+                                    <if condition="!is_null($sum_receive_item[0]['sum_student_accommodation'])">
+                                        <td style="background: blue">{$sum_receive_item[0]['sum_student_accommodation']}</td>
+                                    </if>
+                                    <if condition="!is_null($sum_receive_item[0]['sum_student_meal'])">
+                                        <td style="background: blue">{$sum_receive_item[0]['sum_student_meal']}</td>
+                                    </if>
+                                    <if condition="!is_null($sum_receive_item[0]['sum_student_insurance'])">
+                                        <td style="background: blue">{$sum_receive_item[0]['sum_student_insurance']}</td>
+                                    </if>
+                                </tr>
+                                <volist name="resultCountAnalyseQuery" id="item">
+                                    <tr>
+                                        <td>{$item['student_id']}</td>
+                                        <td>{$item['type']}</td>
+
+                                        <if condition="!is_null($sum_receive_item[0]['sum_student_tuition'])">
+                                            <td>{$item['student_tuition']}</td>
+                                        </if>
+                                        <if condition="!is_null($sum_receive_item[0]['sum_student_data'])">
+                                            <td>{$item['student_data']}</td>
+                                        </if>
+                                        <if condition="!is_null($sum_receive_item[0]['sum_student_accommodation'])">
+                                            <td>{$item['student_accommodation']}</td>
+                                        </if>
+                                        <if condition="!is_null($sum_receive_item[0]['sum_student_meal'])">
+                                            <td>{$item['student_meal']}</td>
+                                        </if>
+                                        <if condition="!is_null($sum_receive_item[0]['sum_student_insurance'])">
+                                            <td>{$item['student_insurance']}</td>
+                                        </if>
+                                    </tr>
+                                </volist>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </notempty>
+                </notempty>
+
+                <!--展示收费标准列表-->
+                <notempty name="result_charge_standard">
+                    <table class="table" id="chargeList">
+                        <thead>
+                        <th>收费项目</th>
+                        <th>创建人</th>
+                        </thead>
+                        <tbody>
+                        <volist name="result_charge_standard" id="item">
+                            <tr>
+                                <td><a href="{:U('admin/charge/countAnalyse',array('charge_standard_name'=>$item['charge_standard_name']))}">{$item['charge_standard_name']}</a></td>
+                                <td>{$item['teacher_name']}</td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </notempty>
+
+            </div>
+        </div>
+    </div>
+
+</block>
+
+<block name="script">
+    <script><if condition="($Think.request.status neq '') OR ($Think.request.s_time neq '') OR ($Think.request.e_time neq '') ">toggel("reSearchM");<else />toggel("RCsearch");</if></script>
+    <script type="text/javascript">
+
+        $(function(){
+
+        })
+    </script>
+</block>
+
+

@@ -1,0 +1,29 @@
+/*年级班级下拉框*/
+.selectList{
+    padding-left: 20px;
+    margin-left: 120px;
+    font-size: 20px;
+    margin-top: -27px;
+}
+.selectList select{
+    margin-right: 20px;
+    width: 60px;
+    height: 25px;
+}
+.selectList input{
+    line-height: 30px;
+    height: 30px;
+    width: 100px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.selectList .excesssave{
+    font-size: 20px;
+    color: #fff;
+    width: 50px;
+    height: 35px;
+    background: #2e97de;
+    border-radius: 4px;
+    cursor: pointer;
+}

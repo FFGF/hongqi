@@ -1,0 +1,179 @@
+<extend name="Public/base"/>
+
+<block name="body">
+    <div class="platCon">
+        <div class="platState white">
+            <div class="platTitle"><h2>缴费查询</h2></div>
+            <div class="recordCou">
+                <div class="reSearch">
+                    <div class="reSearchM">
+                        <form action="{:U('admin/Charge/querychargebilling')}" method="post" onsubmit="">
+                            <div class="couponState">
+                                <input readonly="" class="coupState" name="school_year" id="examine" type="text" placeholder="学年">
+                                <i></i>
+                                <div class="couSta" style="display: none;">
+                                    <b>2017</b>
+                                    <b>2016</b>
+                                    <b>2015</b>
+                                </div>
+                            </div>
+                            <div class="couponState2" style="display: block;">
+                                <input readonly="" class="coupState2" name="school_term" id="level" type="text" placeholder="学期">
+                                <i></i>
+                                <div class="couSta2" style="display: none;">
+                                    <b>春季学期</b>
+                                    <b>秋季学期</b>
+                                </div>
+                            </div>
+
+                            <div  class="couponState2" style="display: block;">
+                                <input type="text" name="student_id" placeholder="学号">
+                            </div>
+
+                            <input type="submit" class="excesssave" value="搜索" style="float: left;">
+                        </form>
+                    </div>
+                </div>
+                <form action="{:U('admin/Charge/saveaccountbilling')}" method="post">
+                    <table class="table" cellspacing="0" cellpadding="0" style="padding-bottom: 10px;margin-left:30px;width:80%">
+                        <thead>
+                        <th width="5%" class="leftradiu lan">账单号</th>
+                        <th width="5%" >学年</th>
+                        <th width="5%" class="lan">学期</th>
+                        <th width="7%">学号</th>
+                        <th width="5%" class="lan">应收金额</th>
+                        <th width="5%" >减免金额</th>
+                        <th width="5%" class="lan">已交金额</th>
+                        <th width="5%" class="rightradiu">欠交金额</th>
+                        </thead>
+                        <tbody>
+                        <volist name="result_account_billing" id="item">
+                            <tr>
+                                <td>{$item['id']}</td>
+                                <td>{$item['school_year']}</td>
+                                <td>{$item['school_term']}</td>
+                                <td>{$item['student_id']}</td>
+                                <td>{$item['should_sum']}</td>
+                                <td>{$item['relief_amount']}</td>
+                                <td><input class="Auditing" type="button" onclick="change(this.parentNode,value)" value="{$item['paid_amount']}"></td>
+                                <input type="hidden" value="{$item['paid_amount_array']}">
+                                <td>{$item['arrearage_amount']}</td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="auditingFrame" >
+        <div class="aFtitle">缴费办理</div>
+        <div class="aFcona">
+            <form>
+                <table class="table"  id="tableid" cellspacing="0" cellpadding="0" style="padding-bottom: 10px;padding-top: 20px;">
+
+                </table>
+            </form>
+        </div>
+        <i class="info_close"></i>
+    </div>
+    <div class="info_bg"></div>
+
+</block>
+<block name="script">
+    <script type="text/javascript" src="__JS__/birthday.js"></script>
+    <script type="text/javascript">
+        //关闭按钮
+        $(".info_close").click(function(){
+            $(".info_bg").hide();
+            $(".auditingFrame").hide();
+            $("#tableid  tr").html("");
+        })
+        //通修改按钮对table里的数据进行修改
+        function change(row,val) {
+            var fgf  = row.nextSibling.nextSibling
+            var jsonstr =  '[{\"'
+            for(var i=1;i<=fgf.attributes.length-2;i++){
+                jsonstr = jsonstr + fgf.attributes[i].nodeName
+            }
+             jsonstr = jsonstr.substring(0,jsonstr.length-1)
+             console.log(jsonstr)
+             var jsonstr =eval(jsonstr);
+             console.log(jsonstr)
+
+            var Table=document.getElementById("tableid");
+            var Tr=Table.insertRow();
+            var Td1=Tr.insertCell();
+            var Td2=Tr.insertCell();
+            var Td3=Tr.insertCell();
+            var Td4=Tr.insertCell();
+            var Td5=Tr.insertCell();
+            var Td6=Tr.insertCell();
+            Td1.innerHTML='账单号';
+            Td2.innerHTML='缴费类型';
+            Td3.innerHTML='支付方式';
+            Td4.innerHTML='缴费时间';
+            Td5.innerHTML='收费人员';
+            Td6.innerHTML='金额';
+
+             for(var i=0 ;i<jsonstr.length;i++){
+                 var Table=document.getElementById("tableid");
+                 var Tr=Table.insertRow();
+                 var Td1=Tr.insertCell();
+                 var Td2=Tr.insertCell();
+                 var Td3=Tr.insertCell();
+                 var Td4=Tr.insertCell();
+                 var Td5=Tr.insertCell();
+                 var Td6=Tr.insertCell();
+                 Td1.innerHTML=jsonstr[i]['account_billing_id']
+                 Td2.innerHTML=jsonstr[i]['type']
+                 Td3.innerHTML=jsonstr[i]['payment_type']
+                 Td4.innerHTML=jsonstr[i]['create_time']
+                 Td5.innerHTML=jsonstr[i]['create_by']
+                 Td6.innerHTML=jsonstr[i]['charge_money']
+               console.log(jsonstr[i]['id'],jsonstr[i]['account_billing_id'],jsonstr[i]['type'],jsonstr[i]['charge_money'],jsonstr[i]['create_by'])
+             }
+           $(".info_bg").show();
+           $(".auditingFrame").show();
+            $(".auditingFrame").css({
+                top: function(index, value) {
+                    return $(window).scrollTop() + ($(window).height()/2);
+                }
+            });
+        }
+
+        function saveChargeBilling(){
+            var data = {"account_billing_id": $('#id')[0].innerHTML,
+                "type":$("#type").val(),
+                "payment_type":$('#payment_type').val(),
+                "charge_money":$('#charge_money').val(),
+            };
+            var url = "/admin/" + "charge-saveChargeBilling.html";
+            $.getJSON(url,data,function(response){
+                if(response.code==1){
+                    alert('数据插入成功');
+                    $(".info_bg").hide();
+                    $(".auditingFrame").hide();
+                    window.location.reload()//刷新当前页面.
+                }else if(response.code==0){
+                    alert('数据插入失败');
+                    $(".info_bg").hide();
+                    $(".auditingFrame").hide();
+                    window.location.reload()//刷新当前页面.
+                }
+            })
+        }
+
+        $(function(){
+
+        })
+    </script>
+</block>
+<block name="style"><style>/* 资料管理-银行帐户 */
+.certfBank{ width: 790px; margin-left: 80px; margin-top: 0px; overflow: hidden; margin-bottom: 100px;}
+.CBcon{ margin-bottom: 30px;}
+.CBcon i{ width: 3px; height: 15px; background: #2e97de; display: inline-block; vertical-align: middle;}
+.CBcon span{ width: 75px; margin-left: 15px; font-size: 16px; color: #444; display: inline-block; vertical-align: middle;}
+.CBcon input{ width: 200px; height: 35px; border: 1px solid #2e97de; border-radius: 4px; text-indent: 1em; vertical-align: middle; line-height: 35px;}
+</style></block>

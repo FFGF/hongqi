@@ -1,0 +1,218 @@
+<extend name="Public/base"/>
+
+<block name="style">
+    <link rel="stylesheet" href="__CSS__/BeatPicker.min.css"/>
+    <script src="__JS__/BeatPicker.min.js"></script>
+    <script src="__JS__/birthday.js"></script>
+    <script type="text/javascript" src="__JS__/changeDate.js"></script>
+    <style type="text/css">
+        .auditingFrame .table input{width: 70px}
+        .auditingFrame .table select{width: 70px}
+    </style>
+</block>
+
+<block name="body">
+    <div class="platCon">
+        <div class="platState white">
+            <div class="platTitle"><h2>学校结构</h2> <a href="{:U('admin/student/indexindex')}"><img src="__IMG__/return.png" style="margin-left: 200px"></a></div>
+            <div></div>
+            <i class="refresh" onclick="javascript:location.reload(true);" title="刷新当前页面"></i>
+            <div class="recordCou">
+                <div style="display: inline-block;width: 50px;margin-left: 30px;">
+                    <img src="__IMG__/studentAdd.png">
+                    <input type="button" class="excesssave" value="新增" onclick="addSchoolStructure()">
+                </div>
+
+                <div style="display: inline-block;width: 50px;margin-left: 3px;">
+                    <img src="__IMG__/studentSave.png">
+                    <input type="button" class="excesssave" value="保存" onclick="saveSchoolStructure()">
+                </div>
+                &nbsp; &nbsp; &nbsp;
+
+                <div style="display: inline-block;width: 50px">
+                    <form action="{:U('admin/student/querygrade')}" method="post">
+                        <img src="__IMG__/studentQuery.png">
+                        <input type="submit" class="excesssave" value="查询">
+                    </form>
+                </div>
+
+                <div style="display: inline-block;width: 50px">
+                    <img src="__IMG__/studentDelete.png">
+                    <input type="submit" class="excesssave" value="删除" onclick="deleteSchoolStructure()">
+                </div>
+
+                <div style="margin-left: 30px;margin-top: 30px;display: none" id="radio">
+                    <label for="1">校区</label><input type="radio" name="choice" value="campus" id="1" checked="checked">
+                    <label for="2" style="margin-left: 20px">年级班级</label><input type="radio" name="choice" value="gradeclass" id="2">
+                </div>
+
+                <div>
+                    <form id="campus" action="{:U('admin/student/savecampus')}" method="post" style="display: none" onsubmit="return checkCampus()">
+                        <table class="table">
+                            <thead>
+                            <th>校区名称</th>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><input type="text" name="campus_name" id="campus_name"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </form>
+
+                    <form id="gradeclass" style="display: none" action="{:U('admin/student/savegrade')}" method="post" onsubmit="return checkGradeClass()">
+                        <table class="table">
+                            <thead>
+                            <th>校区名称</th>
+                            <th>年级</th>
+                            <th>班级</th>
+                            <th>是否实验班</th>
+                            </thead>
+                            <tr>
+                                <td>
+                                    <select name="campus_name">
+                                        <volist name="result_campus" id="item">
+                                            <option value="{$item['campus_name']}">{$item['campus_name']}</option>
+                                        </volist>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select name="grade">
+                                        <option value="小班">小班</option>
+                                        <option value="中班">中班</option>
+                                        <option value="大班">大班</option>
+                                        <option value="一年级">一年级</option>
+                                        <option value="二年级">二年级</option>
+                                        <option value="三年级">三年级</option>
+                                        <option value="四年级">四年级</option>
+                                        <option value="五年级">五年级</option>
+                                        <option value="六年级">六年级</option>
+                                        <option value="七年级">七年级</option>
+                                        <option value="八年级">八年级</option>
+                                        <option value="九年级">九年级</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" name="class" id="class"></td>
+                                <td>
+                                    <select name="class_test">
+                                        <option value="否">否</option>
+                                        <option value="是">是</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+                <notempty name="result_grade">
+                    <table class="table" id="grade_show">
+                        <thead>
+                        <th><input type="checkbox" id="all"></th>
+                        <th>校区</th>
+                        <th>年级</th>
+                        <th>班级</th>
+                        <th>实验班</th>
+                        </thead>
+                        <tbody>
+                        <volist name="result_grade" id="item">
+                            <tr>
+                                <td><input type="checkbox" name="choice_item" value="{$item.id}"></td>
+                                <td>{$item['campus_name']}</td>
+                                <td>{$item['grade']}</td>
+                                <td>{$item['class']}</td>
+                                <td>{$item['class_test']}</td>
+                            </tr>
+                        </volist>
+                        </tbody>
+                    </table>
+                </notempty>
+
+            </div>
+        </div>
+    </div>
+
+</block>
+
+<block name="script">
+    <script><if condition="($Think.request.status neq '') OR ($Think.request.s_time neq '') OR ($Think.request.e_time neq '') ">toggel("reSearchM");<else />toggel("RCsearch");</if></script>
+    <script type="text/javascript">
+        //新增按钮
+        function addSchoolStructure(){
+            $("#grade_show").hide()
+            $("#radio").show()
+            $("#campus").show()
+        }
+        //保存按钮
+        function saveSchoolStructure(){
+            var val=$('input:radio[name="choice"]:checked').val();
+            if(val == 'campus'){
+                $("#campus").submit()
+            }
+            if(val == 'gradeclass'){
+                $("#gradeclass").submit()
+            }
+        }
+        function checkCampus(){
+            if($("#campus_name").val()){
+                return true
+            }else{
+                alert("请输入校区名字")
+                return false
+            }
+        }
+        function checkGradeClass(){
+            if($("#class").val()){
+                return true
+            }else{
+                alert("请输入班级名")
+                return false
+            }
+        }
+        function checkAddChargeItem(){
+            if($("#charge_item_name").val()){
+                return true
+            }else{
+                alert("请输入收费项目名称")
+                return false
+            }
+        }
+        //删除按钮
+        function deleteSchoolStructure(){
+            var choice_value = []
+            $('input[name="choice_item"]:checked').each(function(){
+                choice_value.push($(this).val())
+            })
+            var data = {'grade_id_array':choice_value}
+            var  url = "/admin/" + "student-deletegrade.html"
+            $.getJSON(url,data,function(response){
+                if(response.code==1){
+                    alert('删除成功')
+                    window.location.reload()//刷新当前页面.
+                }else{
+                    alert('删除失败');
+                }
+            })
+        }
+
+        $(function(){
+            $("#1").click(function(){
+                $("#campus").show()
+                $("#gradeclass").hide()
+            })
+            $("#2").click(function(){
+                $("#campus").hide()
+                $("#gradeclass").show()
+            })
+            $("#all").click(function(){
+                if(this.checked){
+                    $("input[name='choice_item']").prop("checked", true);
+                }else{
+                    $("input[name='choice_item']").removeProp("checked", false);
+                }
+            });
+        })
+
+    </script>
+</block>
+
+
