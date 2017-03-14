@@ -2,36 +2,79 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46964e55-461e-48c5-8595-eaffc3394fe2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/StudentController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Student/index.html.bak" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Student/studentfile.html" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Application\Admin\Controller\ChargeController.class.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Application\Admin\Model\CustomerModel.class.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Application\Admin\Model\DeductModel.class.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Application\Admin\Model\ExamineModel.class.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Application\Admin\Model\MessageModel.class.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Application\Admin\Model\OrderModel.class.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Application\Admin\Model\RootModel.class.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Application\Admin\Model\WithdrawalsModel.class.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Application\Admin\View\Charge\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Application\Admin\View\Charge\studentfile.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Uploads\StudentPhoto\2016-10-19\12121676studentphoto.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Admin/Images/m-login.png" afterPath="$PROJECT_DIR$/Public/Admin/Images/m-login.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Runtime/Logs/16_10_20.log" afterPath="$PROJECT_DIR$/Runtime/Logs/16_10_20.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/ThinkPHP/Library/Think/Auth.class.php" afterPath="$PROJECT_DIR$/Application/ThinkPHP/Library/Think/Auth.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/ChannelsController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ChannelsController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Public/base.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Public/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Conf/db.php" afterPath="$PROJECT_DIR$/Application/Common/Conf/db.php" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Cache\Admin\07dd14ca9cc97b36ab55af9a1c91d039.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Cache\Admin\2c428cbf2edb9511f2f283938be93dc7.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Cache\Admin\2cffb38e389616e24828592135c045e5.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Cache\Admin\339956b11d571c96d2883c9078420700.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Cache\Admin\43a31cfd18bae07c8d5d19b96d5dfcd1.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Cache\Admin\4847be8a1f67921826da96c12eb340a2.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Cache\Admin\612156522fd5fbc894dff8f2fe841a5a.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Cache\Admin\8ec0f1c8dbe34467a163db2a6d7c35d0.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Cache\Admin\92545c99554058ed3719bf4c5669f426.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Cache\Admin\ad8807253f30b7ead9696d6f96e6e442.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Cache\Admin\be63e8ac18ebea09dc932cef0872ffd8.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Cache\Admin\d6187e63a9e9b0ea309a704bf22afc45.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Cache\Admin\e7eeb450a8a5adb4ffdcd960f5678e6f.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_020866c3c793fa6be8bfc5930092509f.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_043b4bf8dc292583cdcf63479f68fabb.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_06b36e6661d19b659a6097ef4338e7d1.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_0aab302bca118b077623619774e51433.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_0c78efb09778e41ec965f63cae88eb39.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_14acd6a6695049479d3aa8dca1a4aec6.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_1d78dc8ed51214e518b5114fe24490ae.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_1dafbecb5e39d0b7b20122e556493124.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_1fdb53cc358b33f0ab700c71257818c3.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_23f59a5e39cbc7c66acba490155a93d5.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_2ecea865246a9776ea873e58e8d7a9d4.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_31cbbecb330c88aec4983e5e70251ccb.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_374bb278ab376cae34ce922aa83e067a.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_3bc61c80f48369b4940d562de00976e7.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_405e035ac4b6de59b0ec48457dda0995.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_492b41b0f863f47e9403412e81c4ba4f.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_4fa862a8979f5eef9c8e0bff5469fe22.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_53bc8cf1df089a5fbaebe9005efd1776.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_5e679d69e74e6a85c3187b2475feffef.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_657bb276a1e975e25c1c4260fc89ae7e.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_74dd3a233c7ddb092733cd0da76bd931.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_809956e6482e21bce6917930fc4f0c88.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_84ea78fb143334690e39d6dfc47fd327.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_8601c9e8c05d9468ba60b3df899f5217.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_95d11f10231cb8574ebd6db6608a1106.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_97a019369b79d3f9c2af2f9292853472.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_9fb2461aabb9a61c3a36a080561fa9f9.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_ad50ceab0ece099b50014fac79962640.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_adc7c6f7868e54250c5096cff5c31504.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_aea345331f5b5919c1e155f6dea5f234.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_b4ef392e37090e4d5fcf653d59ff168d.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_c1e0f05b12859041119756e83beece56.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_cebaf41cbe9199f53de0882c3c7efd5c.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_e270eb09e32a0127329973a2775ae449.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_e2944bcdf3b2d533f73045f16e88b5c5.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_f86189949d6699666827635b248cd72a.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_f9dd6479677a5602b07d944936d06e96.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_fd8aaccafb660cad60b62f1c8810771b.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\xampp\htdocs\hongqi\Runtime\Temp\sndaCloud_V1_file_fef2e010ac5e0654b3887e9518a27496.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/ChargeController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/ChargeController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Model/ChargeStandardModel.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Model/ChargeStandardModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Model/ChargeTaskModel.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Model/ChargeTaskModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/StudentController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/StudentController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/TextController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/TextController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Charge/chargeitem.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Charge/chargeitem.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Charge/countanalyse.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Charge/countanalyse.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Charge/createchargetask.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Charge/createchargetask.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/ThinkPHP/Tpl/dispatch_jump.tpl" afterPath="$PROJECT_DIR$/Application/ThinkPHP/Tpl/dispatch_jump.tpl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Charge/examinereduce.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Charge/examinereduce.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Common/function.php" afterPath="$PROJECT_DIR$/Application/Admin/Common/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Admin/Css/style.css" afterPath="$PROJECT_DIR$/Public/Admin/Css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Admin/Js/hongQi.js" afterPath="$PROJECT_DIR$/Public/Admin/Js/hongQi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Admin/Css/hongqi.css" afterPath="$PROJECT_DIR$/Public/Admin/Css/hongqi.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Charge/receiveitem.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Charge/receiveitem.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Charge/reduceapply.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Charge/reduceapply.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Charge/reducetuition.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Charge/reducetuition.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Charge/returnmoney.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Charge/returnmoney.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Student/schoolstructure.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Student/schoolstructure.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Student/studentfile.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Student/studentfile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\hongqi\Application\Admin\View\Charge\setchargestandard.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Student/setchargestandard.html.bak" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\hongqi\Application\Admin\View\Charge\showstudentdata.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Student/showstudentdata.html.bak" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\hongqi\Application\Admin\View\Charge\updatestudent.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Student/updatestudent.html.bak" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\hongqi\Application\Admin\View\Charge\updatestudentfile.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Student/updatestudentfile.html.bak" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\hongqi\Public\Admin\Images\platLogo.png" afterPath="$PROJECT_DIR$/Public/Admin/Images/platLogo1.png" />
-      <change type="MOVED" beforePath="D:\xampp\htdocs\hongqi\Public\Admin\Js\hongQiRegister.js" afterPath="$PROJECT_DIR$/Public/Admin/Js/hongQi.js" />
     </list>
     <ignored path="hongqi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,49 +105,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StudentController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/StudentController.class.php">
+      <file leaf-file-name="chargeitem.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/chargeitem.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="7.071429" vertical-offset="550" max-vertical-offset="11484">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-              <folding>
-                <element signature="e#35#50#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="2508" max-vertical-offset="3190">
+              <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChargeController.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ChargeController.class.php">
+      <file leaf-file-name="countanalyse.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/countanalyse.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.035714" vertical-offset="1007" max-vertical-offset="11484">
-              <caret line="99" column="14" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="14" />
-              <folding>
-                <element signature="e#226#667#0#PHP" expanded="false" />
-                <element signature="e#685#930#0#PHP" expanded="false" />
-                <element signature="e#1628#2489#0#PHP" expanded="false" />
-                <element signature="e#4602#5155#0#PHP" expanded="false" />
-                <element signature="e#5160#5722#0#PHP" expanded="false" />
-                <element signature="e#5749#5833#0#PHP" expanded="false" />
-                <element signature="e#8227#8934#0#PHP" expanded="false" />
-                <element signature="e#8952#8996#0#PHP" expanded="false" />
-                <element signature="e#9016#9552#0#PHP" expanded="false" />
-                <element signature="e#9572#10110#0#PHP" expanded="false" />
-                <element signature="e#10137#10609#0#PHP" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="2557" max-vertical-offset="3498">
+              <caret line="143" column="13" selection-start-line="143" selection-start-column="13" selection-end-line="143" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="receiveitem.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/receiveitem.html">
+      <file leaf-file-name="createchargetask.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/createchargetask.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7683824" vertical-offset="1474" max-vertical-offset="2244">
-              <caret line="192" column="39" selection-start-line="192" selection-start-column="39" selection-end-line="192" selection-end-column="39" />
-              <folding>
-                <element signature="n#notempty#0;n#notempty#0;n#div#1;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-                <element signature="e#9352#10775#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="4970" max-vertical-offset="8096">
+              <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="examinereduce.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/examinereduce.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.714286" vertical-offset="3304" max-vertical-offset="4136">
+              <caret line="160" column="15" selection-start-line="153" selection-start-column="11" selection-end-line="160" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChargeStandardModel.class.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ChargeStandardModel.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.3429084" vertical-offset="0" max-vertical-offset="902">
+              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,26 +163,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/FinanceController.class.php" />
-        <option value="$USER_HOME$/Desktop/index.html" />
-        <option value="$PROJECT_DIR$/Runtime/Cache/Admin/5a1a9621214c40ff3aaac7a7ebd52474.php" />
-        <option value="$PROJECT_DIR$/Application/Common/Conf/db.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/ChannelsController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Public/base.html" />
         <option value="$PROJECT_DIR$/../csv/test.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/scp10909/opt/lampp/htdocs/Application/Admin/View/Report/showdata.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Charge/studentfile.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Charge/index/index.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Finance/index.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Charge/index.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Charge/chargeitem.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Student/schoolstructure.html" />
         <option value="$PROJECT_DIR$/Application/ThinkPHP/Library/Think/Auth.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/GradeModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Charge/createchargetask.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Charge/redeuceapply.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/Common/function.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/ReduceApplyModel.php" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Charge/examineStudent.html" />
         <option value="$USER_HOME$/Desktop/三级联动/area.json" />
@@ -146,28 +181,39 @@
         <option value="$PROJECT_DIR$/../sanji/index1.html" />
         <option value="$PROJECT_DIR$/../sanji/grade.json" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Text/index.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/TextController.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/GradeController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Student/studentfile.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/ReduceApplyModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/StudentfileModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/ReceiveItemModel.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Charge/examinereduce.html" />
         <option value="$PROJECT_DIR$/Public/Admin/Js/hongQiRegister.js" />
-        <option value="$PROJECT_DIR$/Public/Admin/Js/hongQi.js" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/StudentModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Student/index/index.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/StudentController.class.php" />
         <option value="$PROJECT_DIR$/Public/Admin/Css/style.css" />
-        <option value="$PROJECT_DIR$/Public/Admin/Css/hongqi.css" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Charge/reducetuition.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Charge/returnmoney.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Charge/countanalyse.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Charge/reduceapply.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Common/function.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/ChargeStandardModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/ChargeTaskModel.class.php" />
+        <option value="$PROJECT_DIR$/Public/Admin/Css/zTreeStyle.css" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Text/treegradenode.html" />
+        <option value="$PROJECT_DIR$/Public/Admin/Css/demo.css" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/TextController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/StudentController.class.php" />
+        <option value="$PROJECT_DIR$/Public/Admin/Js/hongQi.js" />
+        <option value="$PROJECT_DIR$/Public/Admin/Css/hongqi.css" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Charge/returnmoney.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Charge/createchargetask.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Charge/chargeitem.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Student/schoolstructure.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Student/studentfile.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Charge/reducetuition.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Charge/countanalyse.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Charge/reduceapply.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Charge/examinereduce.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/ChargeController.class.php" />
+        <option value="$USER_HOME$/Desktop/index - 副本.html" />
+        <option value="$PROJECT_DIR$/Public/Admin/Js/jquery.bowser.js" />
+        <option value="$PROJECT_DIR$/Public/Admin/Js/jquery.jqprint-0.3.js" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Charge/receiveitem.html" />
+        <option value="$PROJECT_DIR$/Application/ThinkPHP/Tpl/dispatch_jump.tpl" />
       </list>
     </option>
   </component>
@@ -176,9 +222,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
-    <option name="y" value="17" />
-    <option name="width" value="1378" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -226,6 +272,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,7 +301,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Uploads" />
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThinkPHP" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -268,79 +319,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Runtime" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hongqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hongqi" />
+              <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Runtime" />
+              <option name="myItemId" value="ThinkPHP" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Cache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hongqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hongqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hongqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hongqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hongqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hongqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Css" />
+              <option name="myItemId" value="Tpl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -377,62 +364,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hongqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hongqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hongqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hongqi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Student" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -524,9 +455,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hongqi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hongqi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -536,11 +488,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../channels.grandcloud.cn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yuanlu" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\hongqi\Public\Admin\Css" />
+      <recent name="D:\xampp\htdocs\hongqi\Public\Admin\Js" />
       <recent name="D:\xampp\htdocs\hongqi\Public\Admin\Images" />
       <recent name="D:\xampp\htdocs\hongqi\Uploads\importStudent\2016-10-25" />
       <recent name="D:\xampp\htdocs\hongqi\Application\Admin\Controller" />
@@ -564,9 +518,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -574,6 +525,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -592,16 +546,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="17" width="1378" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22617246" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28668684" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2215478" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22768533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -632,9 +586,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24205749" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -655,91 +609,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ChannelsController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.23698384" vertical-offset="198" max-vertical-offset="1144">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35547575" vertical-offset="17270" max-vertical-offset="24244">
-          <caret line="794" column="9" selection-start-line="794" selection-start-column="9" selection-end-line="794" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Student/setchargestandard.html.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5283019" vertical-offset="880" max-vertical-offset="2002">
-          <caret line="54" column="119" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Admin/Images/chargeTask.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Admin/Images/chargeStandard.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Student/schoolstructure.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47339448" vertical-offset="2426" max-vertical-offset="3630">
-          <caret line="181" column="38" selection-start-line="181" selection-start-column="27" selection-end-line="181" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/createchargetask.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.1985294" vertical-offset="1318" max-vertical-offset="5214">
-          <caret line="55" column="148" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="148" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Common/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.486535" vertical-offset="2567" max-vertical-offset="3124">
-          <caret line="129" column="53" selection-start-line="129" selection-start-column="53" selection-end-line="129" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Student/updatestudentfile.html.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1407" max-vertical-offset="3168">
-          <caret line="117" column="53" selection-start-line="110" selection-start-column="9" selection-end-line="117" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/json.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="37.82143" vertical-offset="2995" max-vertical-offset="6864">
-          <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Student/updatestudent.html.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30890054" vertical-offset="813" max-vertical-offset="1980">
-          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Student/transactpayment.html.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57591623" vertical-offset="2332" max-vertical-offset="3806">
-          <caret line="121" column="10" selection-start-line="117" selection-start-column="6" selection-end-line="121" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/E4X.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37606838" vertical-offset="0" max-vertical-offset="6952">
@@ -796,31 +670,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Text/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.607142" vertical-offset="103" max-vertical-offset="1518">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/GradeController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.6552962" vertical-offset="178" max-vertical-offset="1430">
           <caret line="50" column="38" selection-start-line="50" selection-start-column="38" selection-end-line="50" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/TextController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6714542" vertical-offset="59" max-vertical-offset="1430">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/ThinkPHP/Library/Think/Controller.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.607143" vertical-offset="5473" max-vertical-offset="6666">
-          <caret line="283" column="14" selection-start-line="283" selection-start-column="14" selection-end-line="283" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -831,31 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Student/studentfile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7464" max-vertical-offset="14168">
-          <caret line="346" column="0" selection-start-line="346" selection-start-column="0" selection-end-line="346" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ReduceApplyModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="792" max-vertical-offset="1320">
           <caret line="49" column="22" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ReceiveItemModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4446602" vertical-offset="453" max-vertical-offset="968">
-          <caret line="36" column="121" selection-start-line="36" selection-start-column="119" selection-end-line="36" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/ThinkPHP/Library/Think/Model.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6580882" vertical-offset="1056" max-vertical-offset="36718">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -866,20 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://K:/PHP学习资料/jquery-2.1.1/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="858">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/examinereduce.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7559633" vertical-offset="28" max-vertical-offset="2530">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Public/Admin/Css/css.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.6125654" vertical-offset="924" max-vertical-offset="1518">
@@ -887,31 +705,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Public/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3154122" vertical-offset="0" max-vertical-offset="1298">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/View/Student/index.html.bak">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33153638" vertical-offset="1967" max-vertical-offset="8800">
           <caret line="95" column="51" selection-start-line="95" selection-start-column="51" selection-end-line="95" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Admin/Js/hongQi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3212">
-          <caret line="41" column="2" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/chargeitem.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2112" max-vertical-offset="3058">
-          <caret line="108" column="37" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -936,125 +733,244 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Admin/Css/style.css">
+    <entry file="file://$PROJECT_DIR$/Application/ThinkPHP/Library/Think/Model.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6923077" vertical-offset="5500" max-vertical-offset="6072">
-          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.7577982" vertical-offset="8443" max-vertical-offset="36718">
+          <caret line="373" column="37" selection-start-line="373" selection-start-column="37" selection-end-line="373" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/countanalyse.html">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Common/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.142857" vertical-offset="0" max-vertical-offset="3410">
-          <caret line="4" column="54" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
-          <folding />
+        <state vertical-scroll-proportion="-14.428572" vertical-offset="4106" max-vertical-offset="4664">
+          <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Public/Admin/Css/hongqi.css">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/FinanceController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.774359" vertical-offset="163" max-vertical-offset="748">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/returnmoney.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.285714" vertical-offset="594" max-vertical-offset="1958">
-          <caret line="35" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="n#notempty#0;n#notempty#0;n#div#1;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-            <element signature="n#form#0;n#notempty#0;n#notempty#0;n#div#1;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-            <element signature="n#notempty#1;n#div#1;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/reduceapply.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.411009" vertical-offset="1414" max-vertical-offset="3212">
-          <caret line="207" column="25" selection-start-line="207" selection-start-column="25" selection-end-line="207" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#block#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#notempty#0;n#div#1;n#div#0;n#div#0;n#block#1;n#!!top" expanded="true" />
-            <element signature="n#form#1;n#notempty#0;n#div#1;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-            <element signature="n#notempty#1;n#div#1;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-            <element signature="e#11144#13770#0" expanded="false" />
-            <marker date="1478688135406" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/reducetuition.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27522936" vertical-offset="2402" max-vertical-offset="3476">
-          <caret line="160" column="18" selection-start-line="129" selection-start-column="14" selection-end-line="160" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#form#0;n#notempty#0;n#div#1;n#div#0;n#div#0;n#block#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#notempty#0;n#div#1;n#div#0;n#div#0;n#block#1;n#!!top" expanded="true" />
-            <element signature="n#table#0;n#notempty#1;n#div#1;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-            <element signature="e#7161#8407#0" expanded="false" />
-            <marker date="1478686537143" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ChargeStandardModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="15" max-vertical-offset="572">
-          <caret line="15" column="59" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="59" />
-          <folding>
-            <element signature="e#6#95#0#PHP" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="586">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ChargeTaskModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93014705" vertical-offset="198" max-vertical-offset="2596">
-          <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-          <folding />
+        <state vertical-scroll-proportion="0.7253142" vertical-offset="652" max-vertical-offset="1232">
+          <caret line="145" column="53" selection-start-line="145" selection-start-column="53" selection-end-line="145" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/Css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4840" max-vertical-offset="6072">
+          <caret line="237" column="84" selection-start-line="237" selection-start-column="63" selection-end-line="237" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/Images/TreeImg/line_conn.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/Css/zTreeStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53846157" vertical-offset="1540" max-vertical-offset="2244">
+          <caret line="84" column="139" selection-start-line="84" selection-start-column="139" selection-end-line="84" selection-end-column="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/ThinkPHP/Library/Think/Controller.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35008976" vertical-offset="4205" max-vertical-offset="6666">
+          <caret line="208" column="23" selection-start-line="208" selection-start-column="23" selection-end-line="208" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Text/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5924596" vertical-offset="924" max-vertical-offset="1518">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Text/treegradenode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5257353" vertical-offset="1254" max-vertical-offset="1914">
+          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/TextController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25" vertical-offset="609" max-vertical-offset="1166">
+          <caret line="59" column="3" selection-start-line="59" selection-start-column="3" selection-end-line="88" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/Css/hongqi.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="902">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Public/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.285714" vertical-offset="0" max-vertical-offset="1298">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/Js/hongQi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="990" max-vertical-offset="3828">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/returnmoney.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5919118" vertical-offset="360" max-vertical-offset="2904">
+          <caret line="31" column="93" selection-start-line="31" selection-start-column="93" selection-end-line="31" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Student/studentfile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.142857" vertical-offset="814" max-vertical-offset="14256">
+          <caret line="41" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/reducetuition.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.214286" vertical-offset="434" max-vertical-offset="5126">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/reduceapply.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9285715" vertical-offset="380" max-vertical-offset="4400">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Student/schoolstructure.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20220588" vertical-offset="242" max-vertical-offset="5038">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/StudentController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.071429" vertical-offset="550" max-vertical-offset="11484">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <element signature="e#35#50#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.3897059" vertical-offset="6696" max-vertical-offset="12452">
+          <caret line="331" column="38" selection-start-line="331" selection-start-column="38" selection-end-line="331" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ChargeController.class.php">
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ReceiveItemModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.035714" vertical-offset="1007" max-vertical-offset="11484">
-          <caret line="99" column="14" selection-start-line="99" selection-start-column="14" selection-end-line="99" selection-end-column="14" />
-          <folding>
-            <element signature="e#226#667#0#PHP" expanded="false" />
-            <element signature="e#685#930#0#PHP" expanded="false" />
-            <element signature="e#1628#2489#0#PHP" expanded="false" />
-            <element signature="e#4602#5155#0#PHP" expanded="false" />
-            <element signature="e#5160#5722#0#PHP" expanded="false" />
-            <element signature="e#5749#5833#0#PHP" expanded="false" />
-            <element signature="e#8227#8934#0#PHP" expanded="false" />
-            <element signature="e#8952#8996#0#PHP" expanded="false" />
-            <element signature="e#9016#9552#0#PHP" expanded="false" />
-            <element signature="e#9572#10110#0#PHP" expanded="false" />
-            <element signature="e#10137#10609#0#PHP" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="1.1059246" vertical-offset="66" max-vertical-offset="968">
+          <caret line="36" column="121" selection-start-line="36" selection-start-column="119" selection-end-line="36" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/Js/jquery.jqprint-0.3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="1760">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Public/Admin/Js/jquery.bowser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1109" max-vertical-offset="1804">
+          <caret line="75" column="11" selection-start-line="75" selection-start-column="11" selection-end-line="75" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/ThinkPHP/Tpl/default_index.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="572">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/ThinkPHP/Tpl/dispatch_jump.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2132353" vertical-offset="0" max-vertical-offset="1166">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/ThinkPHP/Tpl/page_trace.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9411764" vertical-offset="1056" max-vertical-offset="1606">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/ThinkPHP/Tpl/think_exception.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/receiveitem.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7683824" vertical-offset="1474" max-vertical-offset="2244">
-          <caret line="192" column="39" selection-start-line="192" selection-start-column="39" selection-end-line="192" selection-end-column="39" />
-          <folding>
-            <element signature="n#notempty#0;n#notempty#0;n#div#1;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-            <element signature="e#9352#10775#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-7.6733947" vertical-offset="4380" max-vertical-offset="6446">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/ChargeController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07155963" vertical-offset="15317" max-vertical-offset="15884">
+          <caret line="704" column="46" selection-start-line="704" selection-start-column="46" selection-end-line="704" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/chargeitem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2508" max-vertical-offset="3190">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/countanalyse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2557" max-vertical-offset="3498">
+          <caret line="143" column="13" selection-start-line="143" selection-start-column="13" selection-end-line="143" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/createchargetask.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="4970" max-vertical-offset="8096">
+          <caret line="44" column="42" selection-start-line="44" selection-start-column="42" selection-end-line="44" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Charge/examinereduce.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.714286" vertical-offset="3304" max-vertical-offset="4136">
+          <caret line="160" column="15" selection-start-line="153" selection-start-column="11" selection-end-line="160" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/ChargeStandardModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3429084" vertical-offset="0" max-vertical-offset="902">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
